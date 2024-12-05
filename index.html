@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Murojaat</title>
+
+  <!-- BOOTSTRAP LINK -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <!-- FLATPICKR LINK -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+  <!-- ICOMOON LINK -->
+  <link rel="stylesheet" href="./assets/icomoon/style.css" />
+
+  <!-- STYLE CSS LINK -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__logo">
+          <a href="index.html">
+            LOGO
+            <!-- <img src="" alt="logo"> -->
+          </a>
+        </div>
+        <div class="header__menu">
+          <nav>
+            <ul>
+              <li><a href="#">Bosh sahifa</a></li>
+              <li><a href="#">Biz haqimizda</a></li>
+              <li><a href="#">Aloqa</a></li>
+              <li><a href="#">Bilish foydali</a></li>
+              <li><a href="#">Video qo'llanma</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__right">
+          <div class="header__languages">
+            <div class="dropdown">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="lang-dropdown"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                O'zbek
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="lang-dropdown">
+                <li><a class="dropdown-item" href="#">O'zbek</a></li>
+                <li><a class="dropdown-item" href="#">Русский</a></li>
+                <li><a class="dropdown-item" href="#">English</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__buttons">
+            <button class="btn btn-primary py-40">Kirish</button>
+          </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="header__mobile-menu-btn" style="display: none">
+          <button type="button" class="btn btn-primary py-40">
+            <img src="./assets/images/icons/menu-line.svg" alt="menu-button" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="header__mobile-menu" style="display: none">
+    <div class="header__buttons">
+      <button class="btn btn-primary py-40">Kirish</button>
+    </div>
+    <div class="mobile-menu-nav">
+      <nav>
+        <ul>
+          <li><a href="#">Bosh sahifa</a></li>
+          <li><a href="#">Biz haqimizda</a></li>
+          <li><a href="#">Aloqa</a></li>
+          <li><a href="#">Bilish foydali</a></li>
+          <li><a href="#">Video qo'llanma</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__mobile-languages">
+      <a href="javascript;;">Русский</a>
+      <a href="javascript;;">English</a>
+      <a href="javascript;;">Uzbek</a>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <main>
+    <!-- section hero -->
+    <section class="section-hero">
+      <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/images/features/hero.webp" class="d-block w-100" alt="hero image" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Murojaatlaringizni biz bilan birga xal qiling!</h5>
+                <p>
+                  Murojaatlar bilan ishlashga mo'ljallangan sayt uchun content
+                  yaratish jarayoni samarali va foydalanuvchilarga qulay
+                  bo'lishi kerak.
+                </p>
+                <button class="btn btn-primary py-40">Batafsil</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/features/hero.webp" class="d-block w-100" alt="hero image" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>
+                  Some representative placeholder content for the second
+                  slide. Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit. Vitae, eveniet!
+                </p>
+                <button class="btn btn-primary py-40">Batafsil</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/features/hero.webp" class="d-block w-100" alt="hero image" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Iusto necessitatibus nostrum totam inventore reprehenderit
+                  doloribus velit eaque mollitia quidem ducimus?
+                </p>
+                <button class="btn btn-primary py-40">Batafsil</button>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- section categories -->
+    <section class="section-categories">
+      <div class="container">
+        <h2>Yo'nalishlar bo'yicha murojaatlaringizni qoldiring</h2>
+        <div class="categories__wrapper">
+          <!-- category__box-1 -->
+          <a href="./category-details.html" class="category__box">
+            <div class="icon communal">
+              <i class="icon-communal"></i>
+            </div>
+            <h4>Kommunal soha</h4>
+            <div class="application_number">
+              <p>Murojaatlar soni:</p>
+              <span>52</span>
+            </div>
+          </a>
+
+          <!-- category__box-2 -->
+          <a href="./category-details.html" class="category__box">
+            <div class="icon transport">
+              <i class="icon-transport"></i>
+            </div>
+            <h4>Transport</h4>
+            <div class="application_number">
+              <p>Murojaatlar soni:</p>
+              <span>54</span>
+            </div>
+          </a>
+
+          <!-- category__box-3 -->
+          <a href="./category-details.html" class="category__box">
+            <span class="badge">Ommabop</span>
+            <div class="icon home">
+              <i class="icon-home"></i>
+            </div>
+            <h4>Uy-joy</h4>
+            <div class="application_number">
+              <p>Murojaatlar soni:</p>
+              <span>29</span>
+            </div>
+          </a>
+
+          <!-- category__box-4 -->
+          <a href="./category-details.html" class="category__box">
+            <div class="icon shopping-cart">
+              <i class="icon-shopping-cart"></i>
+            </div>
+            <h4>Savdo sohasi</h4>
+            <div class="application_number">
+              <p>Murojaatlar soni:</p>
+              <span>71</span>
+            </div>
+          </a>
+
+          <!-- category__box-5 -->
+          <a href="./category-details.html" class="category__box">
+            <div class="icon chemistry">
+              <i class="icon-chemistry"></i>
+            </div>
+            <h4>Kimyo va kasmetika</h4>
+            <div class="application_number">
+              <p>Murojaatlar soni:</p>
+              <span>19</span>
+            </div>
+          </a>
+
+          <!-- category__box-6 -->
+          <a href="./category-details.html" class="category__box">
+            <div class="icon utility">
+              <i class="icon-utility"></i>
+            </div>
+            <h4>Maishiy texnika</h4>
+            <div class="application_number">
+              <p>Murojaatlar soni:</p>
+              <span>27</span>
+            </div>
+          </a>
+
+          <!-- category__box-7 -->
+          <a href="./category-details.html" class="category__box">
+            <div class="icon healtcare">
+              <i class="icon-healtcare"></i>
+            </div>
+            <h4>Xizmat ko'rsatish</h4>
+            <div class="application_number">
+              <p>Murojaatlar soni:</p>
+              <span>19</span>
+            </div>
+          </a>
+
+          <!-- category__box-8 -->
+          <a href="./category-details.html" class="category__box">
+            <div class="icon wifi">
+              <i class="icon-wifi"></i>
+            </div>
+            <h4>Aloqa</h4>
+            <div class="application_number">
+              <p>Murojaatlar soni:</p>
+              <span>51</span>
+            </div>
+          </a>
+
+          <!-- category__box-9 -->
+          <a href="./category-details.html" class="category__box">
+            <div class="icon internet">
+              <i class="icon-internet"></i>
+            </div>
+            <h4>Internet</h4>
+            <div class="application_number">
+              <p>Murojaatlar soni:</p>
+              <span>51</span>
+            </div>
+          </a>
+
+          <!-- category__box-10 -->
+          <a href="./category-details.html" class="category__box">
+            <div class="icon investigation">
+              <i class="icon-investigation"></i>
+            </div>
+            <h4>Lizing</h4>
+            <div class="application_number">
+              <p>Murojaatlar soni:</p>
+              <span>51</span>
+            </div>
+          </a>
+
+          <!-- category__box-11 -->
+          <a href="./category-details.html" class="category__box">
+            <div class="icon mail">
+              <i class="icon-mail"></i>
+            </div>
+            <h4>Pochta xizmati</h4>
+            <div class="application_number">
+              <p>Murojaatlar soni:</p>
+              <span>51</span>
+            </div>
+          </a>
+
+          <!-- category__box-12 -->
+          <a href="./category-details.html" class="category__box">
+            <div class="icon health-heart">
+              <i class="icon-health-heart"></i>
+            </div>
+            <h4>Tibbiy soha</h4>
+            <div class="application_number">
+              <p>Murojaatlar soni:</p>
+              <span>51</span>
+            </div>
+          </a>
+
+          <!-- category__box-13 -->
+          <a href="./category-details.html" class="category__box">
+            <div class="icon master-cap">
+              <i class="icon-master-cap"></i>
+            </div>
+            <h4>Ta'lim</h4>
+            <div class="application_number">
+              <p>Murojaatlar soni:</p>
+              <span>51</span>
+            </div>
+          </a>
+
+          <!-- category__box-14 -->
+          <a href="./category-details.html" class="category__box">
+            <div class="icon bank">
+              <i class="icon-bank"></i>
+            </div>
+            <h4>Bank moliya</h4>
+            <div class="application_number">
+              <p>Murojaatlar soni:</p>
+              <span>51</span>
+            </div>
+          </a>
+
+          <!-- category__box-15 -->
+          <a href="./category-details.html" class="category__box">
+            <div class="icon tv-smart">
+              <i class="icon-tv-smart"></i>
+            </div>
+            <h4>TV xizmatidan foydalanish</h4>
+            <div class="application_number">
+              <p>Murojaatlar soni:</p>
+              <span>51</span>
+            </div>
+          </a>
+
+          <!-- category__box-16 -->
+          <a href="./category-details.html" class="category__box">
+            <div class="icon wifi">
+              <i class="icon-wifi"></i>
+            </div>
+            <h4>Reklama</h4>
+            <div class="application_number">
+              <p>Murojaatlar soni:</p>
+              <span>51</span>
+            </div>
+          </a>
+
+          <!-- category__box-17 -->
+          <a href="./category-details.html" class="category__box">
+            <div class="icon give-pill">
+              <i class="icon-give-pill"></i>
+            </div>
+            <h4>Farmasevtika</h4>
+            <div class="application_number">
+              <p>Murojaatlar soni:</p>
+              <span>51</span>
+            </div>
+          </a>
+
+          <!-- category__box-18 -->
+          <a href="./category-details.html" class="category__box">
+            <div class="icon airplane">
+              <i class="icon-airplane"></i>
+            </div>
+            <h4>Turizm</h4>
+            <div class="application_number">
+              <p>Murojaatlar soni:</p>
+              <span>51</span>
+            </div>
+          </a>
+
+          <!-- category__box-19 -->
+          <a href="./category-details.html" class="category__box">
+            <div class="icon knife-fork">
+              <i class="icon-knife-fork"></i>
+            </div>
+            <h4>Umumiy ovqatlanish</h4>
+            <div class="application_number">
+              <p>Murojaatlar soni:</p>
+              <span>51</span>
+            </div>
+          </a>
+        </div>
+        <!-- show more btn -->
+        <button id="toggleBtn" class="btn btn-primary py-40">Barchasi</button>
+      </div>
+    </section>
+
+    <!-- section appeals -->
+    <section class="section-appeals">
+      <div class="container">
+        <h2>So'nggi 10 ta murojaatlar</h2>
+        <div class="appeal__scroll">
+          <div class="appeals__wrapper">
+            <!-- appeals box-1 -->
+            <div class="appeals__box">
+              <!-- first column -->
+              <div class="box__column first">
+                <small>ID:</small>
+                <span>15715212561</span>
+                <small>E'tiroz qaratilgan subyekt:</small>
+                <b>Anglessey Food MCHJ</b>
+              </div>
+
+              <!-- second column -->
+              <div class="box__column second">
+                <small>Murojaat yo'nalishi:</small>
+                <div class="field_icon">
+                  <div class="icon communal">
+                    <i class="icon-communal"></i>
+                  </div>
+                  <b>Kommunal soha</b>
+                </div>
+                <small>Murojaat yaratilgan sana:</small>
+                <b>10/11/2024 - 16:52</b>
+              </div>
+
+              <!-- third column -->
+              <div class="box__column third">
+                <small>Murojaat kategoriyasi:</small>
+                <p>Issiq va sovuq suv</p>
+                <small>Murojaat turi:</small>
+                <b>
+                  <i>Yaroqlilik muddati o'tgan...</i>
+                  <a href="#">Batafsil</a>
+                </b>
+              </div>
+
+              <!-- fourth column -->
+              <div class="box__column fourth">
+                <small>Status:</small>
+                <span>Ko'rib chiqilmoqda</span>
+                <small>Status yangilangan sana:</small>
+                <b>10/11/2024 - 16:52</b>
+              </div>
+
+              <!-- fifth column -->
+              <div class="box__column fifth">
+                <small>Ko'rib chiqish mudddati</small>
+                <span>15 ish kuni</span>
+              </div>
+            </div>
+
+            <!-- appeals box-2 -->
+            <div class="appeals__box">
+              <!-- first column -->
+              <div class="box__column first">
+                <small>ID:</small>
+                <span>15715212561</span>
+                <small>E'tiroz qaratilgan subyekt:</small>
+                <b>Anglessey Food MCHJ</b>
+              </div>
+
+              <!-- second column -->
+              <div class="box__column second">
+                <small>Murojaat yo'nalishi:</small>
+                <div class="field_icon">
+                  <div class="icon utility">
+                    <i class="icon-utility"></i>
+                  </div>
+                  <b>Maishiy texnika</b>
+                </div>
+                <small>Murojaat yaratilgan sana:</small>
+                <b>10/11/2024 - 16:52</b>
+              </div>
+
+              <!-- third column -->
+              <div class="box__column third">
+                <small>Murojaat kategoriyasi:</small>
+                <p>Issiq va sovuq suv</p>
+                <small>Murojaat turi:</small>
+                <b>
+                  <i>Yaroqlilik muddati o'tgan...</i>
+                  <a href="#">Batafsil</a>
+                </b>
+              </div>
+
+              <!-- fourth column -->
+              <div class="box__column fourth">
+                <small>Status:</small>
+                <span>Ko'rib chiqilmoqda</span>
+                <small>Status yangilangan sana:</small>
+                <b>10/11/2024 - 16:52</b>
+              </div>
+
+              <!-- fifth column -->
+              <div class="box__column fifth">
+                <small>Ko'rib chiqish mudddati</small>
+                <span>15 ish kuni</span>
+              </div>
+            </div>
+
+            <!-- appeals box-3 -->
+            <div class="appeals__box">
+              <!-- first column -->
+              <div class="box__column first">
+                <small>ID:</small>
+                <span>15715212561</span>
+                <small>E'tiroz qaratilgan subyekt:</small>
+                <b>Anglessey Food MCHJ</b>
+              </div>
+
+              <!-- second column -->
+              <div class="box__column second">
+                <small>Murojaat yo'nalishi:</small>
+                <div class="field_icon">
+                  <div class="icon healtcare">
+                    <i class="icon-healtcare"></i>
+                  </div>
+                  <b>Xizmat ko'rsatish</b>
+                </div>
+                <small>Murojaat yaratilgan sana:</small>
+                <b>10/11/2024 - 16:52</b>
+              </div>
+
+              <!-- third column -->
+              <div class="box__column third">
+                <small>Murojaat kategoriyasi:</small>
+                <p>Issiq va sovuq suv</p>
+                <small>Murojaat turi:</small>
+                <b>
+                  <i>Yaroqlilik muddati o'tgan...</i>
+                  <a href="#">Batafsil</a>
+                </b>
+              </div>
+
+              <!-- fourth column -->
+              <div class="box__column fourth">
+                <small>Status:</small>
+                <span>Ko'rib chiqilmoqda</span>
+                <small>Status yangilangan sana:</small>
+                <b>10/11/2024 - 16:52</b>
+              </div>
+
+              <!-- fifth column -->
+              <div class="box__column fifth">
+                <small>Ko'rib chiqish mudddati</small>
+                <span>15 ish kuni</span>
+              </div>
+            </div>
+
+            <!-- appeals box-4 -->
+            <div class="appeals__box">
+              <!-- first column -->
+              <div class="box__column first">
+                <small>ID:</small>
+                <span>15715212561</span>
+                <small>E'tiroz qaratilgan subyekt:</small>
+                <b>Anglessey Food MCHJ</b>
+              </div>
+
+              <!-- second column -->
+              <div class="box__column second">
+                <small>Murojaat yo'nalishi:</small>
+                <div class="field_icon">
+                  <div class="icon transport">
+                    <i class="icon-transport"></i>
+                  </div>
+                  <b>Transport</b>
+                </div>
+                <small>Murojaat yaratilgan sana:</small>
+                <b>10/11/2024 - 16:52</b>
+              </div>
+
+              <!-- third column -->
+              <div class="box__column third">
+                <small>Murojaat kategoriyasi:</small>
+                <p>Issiq va sovuq suv</p>
+                <small>Murojaat turi:</small>
+                <b>
+                  <i>Yaroqlilik muddati o'tgan...</i>
+                  <a href="#">Batafsil</a>
+                </b>
+              </div>
+
+              <!-- fourth column -->
+              <div class="box__column fourth">
+                <small>Status:</small>
+                <span>Ko'rib chiqilmoqda</span>
+                <small>Status yangilangan sana:</small>
+                <b>10/11/2024 - 16:52</b>
+              </div>
+
+              <!-- fifth column -->
+              <div class="box__column fifth">
+                <small>Ko'rib chiqish mudddati</small>
+                <span>15 ish kuni</span>
+              </div>
+            </div>
+
+            <!-- appeals box-5 -->
+            <div class="appeals__box">
+              <!-- first column -->
+              <div class="box__column first">
+                <small>ID:</small>
+                <span>15715212561</span>
+                <small>E'tiroz qaratilgan subyekt:</small>
+                <b>Anglessey Food MCHJ</b>
+              </div>
+
+              <!-- second column -->
+              <div class="box__column second">
+                <small>Murojaat yo'nalishi:</small>
+                <div class="field_icon">
+                  <div class="icon home">
+                    <i class="icon-home"></i>
+                  </div>
+                  <b>Xizmat ko'rsatish</b>
+                </div>
+                <small>Murojaat yaratilgan sana:</small>
+                <b>10/11/2024 - 16:52</b>
+              </div>
+
+              <!-- third column -->
+              <div class="box__column third">
+                <small>Murojaat kategoriyasi:</small>
+                <p>Issiq va sovuq suv</p>
+                <small>Murojaat turi:</small>
+                <b>
+                  <i>Yaroqlilik muddati o'tgan...</i>
+                  <a href="#">Batafsil</a>
+                </b>
+              </div>
+
+              <!-- fourth column -->
+              <div class="box__column fourth">
+                <small>Status:</small>
+                <span>Ko'rib chiqilmoqda</span>
+                <small>Status yangilangan sana:</small>
+                <b>10/11/2024 - 16:52</b>
+              </div>
+
+              <!-- fifth column -->
+              <div class="box__column fifth">
+                <small>Ko'rib chiqish mudddati</small>
+                <span>15 ish kuni</span>
+              </div>
+            </div>
+
+            <!-- appeals box-6 -->
+            <div class="appeals__box">
+              <!-- first column -->
+              <div class="box__column first">
+                <small>ID:</small>
+                <span>15715212561</span>
+                <small>E'tiroz qaratilgan subyekt:</small>
+                <b>Anglessey Food MCHJ</b>
+              </div>
+
+              <!-- second column -->
+              <div class="box__column second">
+                <small>Murojaat yo'nalishi:</small>
+                <div class="field_icon">
+                  <div class="icon shopping-cart">
+                    <i class="icon-shopping-cart"></i>
+                  </div>
+                  <b>Xizmat ko'rsatish</b>
+                </div>
+                <small>Murojaat yaratilgan sana:</small>
+                <b>10/11/2024 - 16:52</b>
+              </div>
+
+              <!-- third column -->
+              <div class="box__column third">
+                <small>Murojaat kategoriyasi:</small>
+                <p>Issiq va sovuq suv</p>
+                <small>Murojaat turi:</small>
+                <b>
+                  <i>Yaroqlilik muddati o'tgan...</i>
+                  <a href="#">Batafsil</a>
+                </b>
+              </div>
+
+              <!-- fourth column -->
+              <div class="box__column fourth">
+                <small>Status:</small>
+                <span>Ko'rib chiqilmoqda</span>
+                <small>Status yangilangan sana:</small>
+                <b>10/11/2024 - 16:52</b>
+              </div>
+
+              <!-- fifth column -->
+              <div class="box__column fifth">
+                <small>Ko'rib chiqish mudddati</small>
+                <span>15 ish kuni</span>
+              </div>
+            </div>
+
+            <!-- appeals box-7 -->
+            <div class="appeals__box">
+              <!-- first column -->
+              <div class="box__column first">
+                <small>ID:</small>
+                <span>15715212561</span>
+                <small>E'tiroz qaratilgan subyekt:</small>
+                <b>Anglessey Food MCHJ</b>
+              </div>
+
+              <!-- second column -->
+              <div class="box__column second">
+                <small>Murojaat yo'nalishi:</small>
+                <div class="field_icon">
+                  <div class="icon chemistry">
+                    <i class="icon-chemistry"></i>
+                  </div>
+                  <b>Xizmat ko'rsatish</b>
+                </div>
+                <small>Murojaat yaratilgan sana:</small>
+                <b>10/11/2024 - 16:52</b>
+              </div>
+
+              <!-- third column -->
+              <div class="box__column third">
+                <small>Murojaat kategoriyasi:</small>
+                <p>Issiq va sovuq suv</p>
+                <small>Murojaat turi:</small>
+                <b>
+                  <i>Yaroqlilik muddati o'tgan...</i>
+                  <a href="#">Batafsil</a>
+                </b>
+              </div>
+
+              <!-- fourth column -->
+              <div class="box__column fourth">
+                <small>Status:</small>
+                <span>Ko'rib chiqilmoqda</span>
+                <small>Status yangilangan sana:</small>
+                <b>10/11/2024 - 16:52</b>
+              </div>
+
+              <!-- fifth column -->
+              <div class="box__column fifth">
+                <small>Ko'rib chiqish mudddati</small>
+                <span>15 ish kuni</span>
+              </div>
+            </div>
+
+            <!-- appeals box-8 -->
+            <div class="appeals__box">
+              <!-- first column -->
+              <div class="box__column first">
+                <small>ID:</small>
+                <span>15715212561</span>
+                <small>E'tiroz qaratilgan subyekt:</small>
+                <b>Anglessey Food MCHJ</b>
+              </div>
+
+              <!-- second column -->
+              <div class="box__column second">
+                <small>Murojaat yo'nalishi:</small>
+                <div class="field_icon">
+                  <div class="icon wifi">
+                    <i class="icon-wifi"></i>
+                  </div>
+                  <b>Xizmat ko'rsatish</b>
+                </div>
+                <small>Murojaat yaratilgan sana:</small>
+                <b>10/11/2024 - 16:52</b>
+              </div>
+
+              <!-- third column -->
+              <div class="box__column third">
+                <small>Murojaat kategoriyasi:</small>
+                <p>Issiq va sovuq suv</p>
+                <small>Murojaat turi:</small>
+                <b>
+                  <i>Yaroqlilik muddati o'tgan...</i>
+                  <a href="#">Batafsil</a>
+                </b>
+              </div>
+
+              <!-- fourth column -->
+              <div class="box__column fourth">
+                <small>Status:</small>
+                <span>Ko'rib chiqilmoqda</span>
+                <small>Status yangilangan sana:</small>
+                <b>10/11/2024 - 16:52</b>
+              </div>
+
+              <!-- fifth column -->
+              <div class="box__column fifth">
+                <small>Ko'rib chiqish mudddati</small>
+                <span>15 ish kuni</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- load btn -->
+        <button class="btn btn-primary py-40 text-center">
+          Barcha murojaatlar
+        </button>
+      </div>
+    </section>
+
+    <!-- section objection -->
+    <section class="section-objection">
+      <div class="container">
+        <h2>E'tirozlar</h2>
+        <p class="objection_description">
+          Murojaatlar bilan ishlashga mo'ljallangan sayt uchun content
+          yaratish jarayoni samarali va foydalanuvchilarga qulay bo'lishi
+          kerak.
+        </p>
+        <div class="objection__wrapper">
+          <!-- objection box-1 -->
+          <div class="objection__box">
+            <div class="objection__number">1326</div>
+            <h5>Ro'yxatdan o'tganlar soni</h5>
+            <p>We've helped build over 400 projects with great companies.</p>
+          </div>
+
+          <!-- objection box-2 -->
+          <div class="objection__box">
+            <div class="objection__number">24532</div>
+            <h5>E'tirozlar soni</h5>
+            <p>We've helped build over 400 projects with great companies.</p>
+          </div>
+
+          <!-- objection box-3 -->
+          <div class="objection__box">
+            <div class="objection__number">96%</div>
+            <h5>Hal qilingan e'tirozlar</h5>
+            <p>Our free UI kit has been downloaded over 10k times.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section statistics -->
+    <section class="section-statistics">
+      <div class="container">
+        <h2 class="text-center">Umumiy statistika</h2>
+        <p class="text-center">
+          Murojaatlar bilan ishlashga mo'ljallangan sayt uchun content
+          yaratish jarayoni samarali va foydalanuvchilarga qulay bo'lishi
+          kerak.
+        </p>
+        <div class="statistics__wrapper">
+          <!-- statistics box-1 -->
+          <div class="statistics__box">
+            <!-- <h3>E'tirozli holatlar bo'yicha</h3> -->
+            <figure class="highcharts-figure">
+              <div id="highcharts_container"></div>
+            </figure>
+          </div>
+
+          <!-- statistics box-2 -->
+          <div class="statistics__box">
+            <!-- <h3>E'tirozli sohalar bo'yicha</h3> -->
+            <figure class="highcharts-figure">
+              <div id="highcharts_container1"></div>
+            </figure>
+          </div>
+        </div>
+
+        <!-- statistics indicators -->
+        <div class="statistic__indicators">
+          <h2 class="text-center">
+            Ko'rsatkichlar bo‘yicha TOP 10 tashkilotlar
+          </h2>
+          <table class="table table-striped">
+            <tr>
+              <th>№</th>
+              <th>Tashkilot nomi</th>
+              <th>Kelib tushgan murojaatlar</th>
+              <th>Hal qilingan murojaatlar</th>
+              <th>Foizda</th>
+            </tr>
+
+            <!-- tr-1 -->
+            <tr>
+              <td>1</td>
+              <td>Ta'lim vazirligi</td>
+              <td><span>257</span></td>
+              <td><span class="resolved__appeals_number">257</span></td>
+              <td>
+                <span class="resolved__appeals_percent">
+                  <i class="icon-arrow-up"></i>
+                  82%
+                </span>
+              </td>
+            </tr>
+
+            <!-- tr-2 -->
+            <tr>
+              <td>2</td>
+              <td>Yoshlar ishlari agentligi</td>
+              <td><span>257</span></td>
+              <td><span class="resolved__appeals_number">257</span></td>
+              <td>
+                <span class="resolved__appeals_percent">
+                  <i class="icon-arrow-up"></i>
+                  82%
+                </span>
+              </td>
+            </tr>
+
+            <!-- tr-3 -->
+            <tr>
+              <td>3</td>
+              <td>Bandlik</td>
+              <td><span>257</span></td>
+              <td><span class="resolved__appeals_number">257</span></td>
+              <td>
+                <span class="resolved__appeals_percent">
+                  <i class="icon-arrow-up"></i>
+                  82%
+                </span>
+              </td>
+            </tr>
+
+            <!-- tr-4 -->
+            <tr>
+              <td>4</td>
+              <td>Pochta MTM</td>
+              <td><span>257</span></td>
+              <td><span class="resolved__appeals_number">257</span></td>
+              <td>
+                <span class="resolved__appeals_percent">
+                  <i class="icon-arrow-up"></i>
+                  82%
+                </span>
+              </td>
+            </tr>
+
+            <!-- tr-5 -->
+            <tr>
+              <td>5</td>
+              <td>Bank va moliya boshqarmasi</td>
+              <td><span>257</span></td>
+              <td><span class="resolved__appeals_number">257</span></td>
+              <td>
+                <span class="resolved__appeals_percent">
+                  <i class="icon-arrow-up"></i>
+                  82%
+                </span>
+              </td>
+            </tr>
+
+            <!-- tr-6 -->
+            <tr>
+              <td>6</td>
+              <td>Yoshlar ishlari agentligi</td>
+              <td><span>257</span></td>
+              <td><span class="resolved__appeals_number">257</span></td>
+              <td>
+                <span class="resolved__appeals_percent">
+                  <i class="icon-arrow-up"></i>
+                  82%
+                </span>
+              </td>
+            </tr>
+
+            <!-- tr-7 -->
+            <tr>
+              <td>7</td>
+              <td>Pochta</td>
+              <td><span>257</span></td>
+              <td><span class="resolved__appeals_number">257</span></td>
+              <td>
+                <span class="resolved__appeals_percent">
+                  <i class="icon-arrow-up"></i>
+                  82%
+                </span>
+              </td>
+            </tr>
+
+            <!-- tr-8 -->
+            <tr>
+              <td>8</td>
+              <td>Maishiy texnika</td>
+              <td><span>257</span></td>
+              <td><span class="resolved__appeals_number">257</span></td>
+              <td>
+                <span class="resolved__appeals_percent">
+                  <i class="icon-arrow-up"></i>
+                  82%
+                </span>
+              </td>
+            </tr>
+
+            <!-- tr-9 -->
+            <tr>
+              <td>9</td>
+              <td>Savdo sohasi</td>
+              <td><span>257</span></td>
+              <td><span class="resolved__appeals_number">257</span></td>
+              <td>
+                <span class="resolved__appeals_percent">
+                  <i class="icon-arrow-up"></i>
+                  82%
+                </span>
+              </td>
+            </tr>
+
+            <!-- tr-10 -->
+            <tr>
+              <td>10</td>
+              <td>Internet</td>
+              <td><span>257</span></td>
+              <td><span class="resolved__appeals_number">257</span></td>
+              <td>
+                <span class="resolved__appeals_percent">
+                  <i class="icon-arrow-up"></i>
+                  82%
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- section regions -->
+    <section class="section-regions">
+      <div class="container">
+        <h2 class="text-center">Hududlar bo'yicha statistika</h2>
+        <p class="text-center regions_description">
+          Murojaatlar bilan ishlashga mo'ljallangan sayt uchun content
+          yaratish jarayoni samarali va foydalanuvchilarga qulay bo'lishi
+          kerak.
+        </p>
+        <div class="regions__wrapper">
+          <div class="regions_info">
+            <div class="regions_dropdowns">
+              <div class="dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="year-dropdown"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  2024-yil
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="year-dropdown">
+                  <li><a class="dropdown-item" href="#">2024-yil</a></li>
+                  <li><a class="dropdown-item" href="#">2023-yil</a></li>
+                  <li><a class="dropdown-item" href="#">2022-yil</a></li>
+                  <li><a class="dropdown-item" href="#">2021-yil</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="month-dropdown"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Aprel
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="month-dropdown">
+                  <li><a class="dropdown-item" href="#">Yanvar</a></li>
+                  <li><a class="dropdown-item" href="#">Fevral</a></li>
+                  <li><a class="dropdown-item" href="#">Mart</a></li>
+                  <li><a class="dropdown-item" href="#">Aprel</a></li>
+                  <li><a class="dropdown-item" href="#">May</a></li>
+                  <li><a class="dropdown-item" href="#">Iyun</a></li>
+                  <li><a class="dropdown-item" href="#">Iyul</a></li>
+                  <li><a class="dropdown-item" href="#">Avgust</a></li>
+                  <li><a class="dropdown-item" href="#">Sentabr</a></li>
+                  <li><a class="dropdown-item" href="#">Oktabr</a></li>
+                  <li><a class="dropdown-item" href="#">Noyabr</a></li>
+                  <li><a class="dropdown-item" href="#">Dekabr</a></li>
+                </ul>
+              </div>
+            </div>
+            <div id="uzb_map"></div>
+            <div class="regions__info_wrapper">
+              <!-- regions info box-1 -->
+              <div class="regions__info_box">
+                <div class="icon">
+                  <i class="icon-city"></i>
+                </div>
+                <h4>1557</h4>
+                <p>Ro'yxatdan o'tganlar</p>
+              </div>
+
+              <!-- regions info box-2 -->
+              <div class="regions__info_box">
+                <div class="icon">
+                  <i class="icon-file"></i>
+                </div>
+                <h4>124 200 ta</h4>
+                <p>Kelib tushgan murojjatlar</p>
+              </div>
+
+              <!-- regions info box-3 -->
+              <div class="regions__info_box">
+                <div class="icon">
+                  <i class="icon-checkmark-circle"></i>
+                </div>
+                <h4>24 200 ta</h4>
+                <p>Hal qilingan murojaatlar</p>
+              </div>
+
+              <!-- regions info box-4 -->
+              <div class="regions__info_box">
+                <div class="icon">
+                  <i class="icon-calendar"></i>
+                </div>
+                <h4>15 kun</h4>
+                <p>O'rtacha ko'rib chiqish muddati</p>
+              </div>
+            </div>
+          </div>
+          <div class="regions_list">
+            <h3>Respublika bo'yicha</h3>
+            <div class="ul_scroll">
+              <ul>
+                <!-- li-1 -->
+                <li>
+                  <span class="region_name">Qoraqoqolpog'iston</span>
+                  <span class="region__appeals_number">157 ta murojaat</span>
+                </li>
+
+                <!-- li-2 -->
+                <li>
+                  <span class="region_name">Toshkent shahar</span>
+                  <span class="region__appeals_number">15 751 ta murojaat</span>
+                </li>
+
+                <!-- li-3 -->
+                <li>
+                  <span class="region_name">Toshkent</span>
+                  <span class="region__appeals_number">1 1011 ta murojaat</span>
+                </li>
+
+                <!-- li-4 -->
+                <li>
+                  <span class="region_name">Buxoro</span>
+                  <span class="region__appeals_number">581 ta murojaat</span>
+                </li>
+
+                <!-- li-5 -->
+                <li>
+                  <span class="region_name">Jizzax</span>
+                  <span class="region__appeals_number">685 ta murojaat</span>
+                </li>
+
+                <!-- li-6 -->
+                <li>
+                  <span class="region_name">Navoiy</span>
+                  <span class="region__appeals_number">11 ta murojaat</span>
+                </li>
+
+                <!-- li-7 -->
+                <li>
+                  <span class="region_name">Samarqand</span>
+                  <span class="region__appeals_number">1 952 ta murojaat</span>
+                </li>
+
+                <!-- li-8 -->
+                <li>
+                  <span class="region_name">Andijon</span>
+                  <span class="region__appeals_number">5 814 ta murojaat</span>
+                </li>
+
+                <!-- li-9 -->
+                <li>
+                  <span class="region_name">Namangan</span>
+                  <span class="region__appeals_number">571 ta murojaat</span>
+                </li>
+
+                <!-- li-10 -->
+                <li>
+                  <span class="region_name">Farg'ona</span>
+                  <span class="region__appeals_number">632 ta murojaat</span>
+                </li>
+
+                <!-- li-11 -->
+                <li>
+                  <span class="region_name">Sirdaryo</span>
+                  <span class="region__appeals_number">1 257 ta murojaat</span>
+                </li>
+
+                <!-- li-12 -->
+                <li>
+                  <span class="region_name">Surxandaryo</span>
+                  <span class="region__appeals_number">852 ta murojaat</span>
+                </li>
+
+                <!-- li-13 -->
+                <li>
+                  <span class="region_name">Qashqadaryo</span>
+                  <span class="region__appeals_number">1 157 ta murojaat</span>
+                </li>
+
+                <!-- li-14 -->
+                <li>
+                  <span class="region_name">Xorazm</span>
+                  <span class="region__appeals_number">1 588 ta murojaat</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__first_row">
+        <div class="footer__first_right">
+          <a href="#"> LOGO </a>
+          <p>
+            Design amazing digital experiences that create more happy in the
+            world.
+          </p>
+          <ul>
+            <li><a href="#">Bosh sahifa</a></li>
+            <li><a href="#">Biz haqimizda</a></li>
+            <li><a href="#">Aloqa</a></li>
+            <li><a href="#">Bilish foydali</a></li>
+            <li><a href="#">Video qo'llanma</a></li>
+          </ul>
+        </div>
+        <div class="footer__first_middle">
+          <div class="phone_number">
+            <p>Ishonch telefoni</p>
+            <a href="tel:+998944986565">+998944986565</a>
+          </div>
+          <div class="call_center">
+            <p>Call center</p>
+            <h5>8123</h5>
+          </div>
+        </div>
+        <div class="footer__first_left">
+          <p>Get the app</p>
+          <img src="./assets/images/features/app-store.svg" alt="app-store" />
+          <img src="./assets/images/features/google-play.svg" alt="google-play" />
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="footer__second_row">
+        <div class="footer__second_right">
+          <img src="./assets/images/features/uzex-logo.svg" alt="uzex-logo" />
+          <p>
+            Design amazing digital experiences that create more happy in the
+            world.
+          </p>
+        </div>
+        <div class="footer__second_middle">
+          <p>
+            <span>Telefon raqam:</span><a href="tel:+998712070033">+998712070033</a>
+          </p>
+          <p><span>Faks:</span><a href="#">213-33-00</a></p>
+          <p>
+            <span>Email:</span><a href="mailto:info@rtsb.uz">info&commat;rtsb.uz</a>
+          </p>
+          <p>
+            <span>Manzil</span><a href="#">Bobur ko'chasi 77, Toshkent. Uzbekistan</a>
+          </p>
+        </div>
+        <div class="footer__second_left">
+          <p>
+            Saytdagi ma'lumotlardan foydalanilganda <a href="www.uzex.uz">www.uzex.uz</a>veb-saytiga havola qilish
+            majburiy.
+          </p>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="footer__third_row">
+        <p>© 2077 Untitled UI. All rights reserved.</p>
+        <div class="social_medias">
+          <i class="icon-youtube"></i>
+          <i class="icon-telegram"></i>
+          <i class="icon-instagram"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- BOOTSTRAP BUNDLE.JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+    defer></script>
+
+  <!-- FLATPICKR.JS -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+
+  <!-- HIGHCHART.JS -->
+  <script src="https://code.highcharts.com/highcharts.js" defer></script>
+  <script src="https://code.highcharts.com/modules/exporting.js" defer></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js" defer></script>
+
+  <!-- HIGHMAPS.JS -->
+  <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+
+  <!-- MAIN.JS -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
