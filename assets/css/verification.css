@@ -1,0 +1,74 @@
+:root {
+    --main-text-color: #535862;
+    --color-gray-600: #475467;
+    --color-inky: #7F56D9;
+    --title-text-color: #1d2939;
+    --greenDark-color: #027a48;
+    --greenLight-color: #6ce9a6;
+    --blurLight-color: #026AA2;
+    --gray-50: #f9fafb;
+    --gray-100: #e4e7ec;
+}
+
+
+
+/* SECTION VERIFICATION STYLE */
+
+.section-verification {
+    min-height: calc(100vh - 95px - 16px - 647.41px);
+    padding: 56px 0 100px;
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.section-verification h1 {
+    color: var(--title-text-color);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.verification_title {
+    color: var(--main-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    max-width: 310px;
+    margin: 0 auto 24px;
+}
+
+.section-verification .icon-call {
+    font-size: 28px;
+    color: #414651;
+}
+
+.verification_form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.verification_inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.verification_inputs input {
+    padding: 10px;
+    color: rgb(21, 112, 239);
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: -2%;
+    text-align: center;
+    border: 2px solid rgb(21, 112, 239);
+    border-radius: 12px;
+    background: rgb(255, 255, 255);
+}
