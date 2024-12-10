@@ -14,19 +14,19 @@
 
 /* SECTION CATEGORY DETAILS STYLE */
 
-.section-company-appeals {
+.section-appeals-list {
     min-height: calc(100vh - 95px - 16px - 354px);
     padding: 42px 0 100px;
 }
 
-.company-appeals_header {
+.appeals-list_header {
     display: flex;
     flex-direction: column;
     gap: 24px;
     margin-bottom: 24px;
 }
 
-.company-appeals_header>h3 {
+.appeals-list_header>h3 {
     color: var(--title-text-color);
     font-size: 24px;
     font-weight: 600;
@@ -92,35 +92,35 @@ h1 {
     text-align: left;
 }
 
-.company-appeals__filterWrapper {
+.appeals-list__filterWrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.company-appeals_totalCount {
+.appeals-list_totalCount {
     display: flex;
     align-items: center;
     gap: 6px;
 }
 
-.company-appeals_totalCount span {
+.appeals-list_totalCount span {
     font-size: 20px;
     font-weight: 500;
     line-height: 28px;
 }
 
-.company-appeals__totalText {
+.appeals-list__totalText {
     color: #667085;
 }
 
-.company-appeals_searchInput__filterBtn {
+.appeals-list_searchInput__filterBtn {
     display: flex;
     align-items: center;
     gap: 24px;
 }
 
-.company-appeals_searchInput__filterBtn button {
+.appeals-list_searchInput__filterBtn button {
     display: flex;
     align-items: center;
     gap: 6px;

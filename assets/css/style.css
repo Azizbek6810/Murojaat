@@ -7,6 +7,7 @@
 @import "./registration.css";
 @import "./companies-list.css";
 @import "./company-appeals.css";
+@import "./appeals-list.css";
 
 :root {
   --main-text-color: #535862;
@@ -203,6 +204,15 @@ input[type="number"] {
 
 .breadcrumbs .icon-chevron-down1 {
   color: #d5d6d9;
+}
+
+/* LOAD BTN */
+
+.load_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
 }
 
 /* HEADER STYLES */

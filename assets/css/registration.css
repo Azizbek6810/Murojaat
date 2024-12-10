@@ -71,6 +71,12 @@
     margin-bottom: 32px;
 }
 
+.registration_form img{
+    height: 70px;
+    width: 50%;
+    object-fit: contain;
+}
+
 .registration_notification {
     display: flex;
     flex-direction: column;
