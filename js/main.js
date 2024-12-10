@@ -297,15 +297,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     colorAxis: {
       min: 0,
+      stops: [[0, '#2E90FA']]
     },
 
     series: [
       {
         data: data,
-        name: "Random data",
+        name: "Hudud",
         states: {
           hover: {
             color: "#B2DDFF",
+            borderColor: 'white',
           },
         },
         dataLabels: {

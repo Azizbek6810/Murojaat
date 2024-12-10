@@ -1,13 +1,15 @@
 :root {
     --main-text-color: #535862;
     --color-gray-600: #475467;
-    --color-inky: #7F56D9;
+    --color-inky: #7f56d9;
     --title-text-color: #1d2939;
     --greenDark-color: #027a48;
     --greenLight-color: #6ce9a6;
-    --blurLight-color: #026AA2;
+    --blurLight-color: #026aa2;
     --gray-50: #f9fafb;
     --gray-100: #e4e7ec;
+    --blue-600: #1570ef;
+    --white: #fff;
 }
 
 
@@ -15,7 +17,7 @@
 /* SECTION VERIFICATION STYLE */
 
 .section-verification {
-    min-height: calc(100vh - 95px - 16px - 647.41px);
+    min-height: calc(100vh - 95px - 16px - 354px);
     padding: 56px 0 100px;
     max-width: 360px;
     margin: 0 auto;
@@ -55,20 +57,22 @@
 
 .verification_inputs {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 12px;
+    
 }
 
 .verification_inputs input {
+    flex: 0 0 22%;
     padding: 10px;
-    color: rgb(21, 112, 239);
+    color: var(--blue-600);
     font-size: 48px;
     font-weight: 500;
     line-height: 60px;
     letter-spacing: -2%;
     text-align: center;
-    border: 2px solid rgb(21, 112, 239);
+    border: 2px solid var(--blue-600);
     border-radius: 12px;
-    background: rgb(255, 255, 255);
+    background: var(--white);
 }

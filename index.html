@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Murojaat</title>
+  <title>Complaints landing</title>
 
   <!-- BOOTSTRAP LINK -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
   <!-- FLATPICKR LINK -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
 
   <!-- ICOMOON LINK -->
   <link rel="stylesheet" href="./assets/icomoon/style.css" />
@@ -44,22 +44,36 @@
         <div class="header__right">
           <div class="header__languages">
             <div class="dropdown">
-              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="lang-dropdown"
-                data-bs-toggle="dropdown" aria-expanded="false">
+              <button class="btn dropdown-toggle" type="button" id="lang-dropdown" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="./assets/images/icons/uz-flag.svg" alt="uz flag" />
                 O'zbek
               </button>
               <ul class="dropdown-menu" aria-labelledby="lang-dropdown">
-                <li><a class="dropdown-item" href="#">O'zbek</a></li>
-                <li><a class="dropdown-item" href="#">Русский</a></li>
-                <li><a class="dropdown-item" href="#">English</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="./assets/images/icons/uz-flag.svg" alt="uz flag" />
+                    <span> O'zbek</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="./assets/images/icons/ru-flag.svg" alt="ru flag" />
+                    <span>Русский</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="./assets/images/icons/en-flag.svg" alt="en flag" />
+                    <span>English</span>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
           <div class="header__buttons">
             <a href="./login.html">
-              <button class="btn btn-primary py-40">
-                Kirish
-              </button>
+              <button class="btn btn-primary py-40">Kirish</button>
             </a>
           </div>
         </div>
@@ -78,16 +92,14 @@
   <div class="header__mobile-menu" style="display: none">
     <div class="header__buttons">
       <a href="./login.html">
-        <button class="btn btn-primary py-40">
-          Kirish
-        </button>
+        <button class="btn btn-primary py-40">Kirish</button>
       </a>
     </div>
     <div class="mobile-menu-nav">
       <nav>
         <ul>
           <li><a href="#">Bosh sahifa</a></li>
-          <li><a href="#">Biz haqimizda</a></li>
+          <li><a href="./client-cabinet.html">Biz haqimizda</a></li>
           <li><a href="#">Aloqa</a></li>
           <li><a href="#">Bilish foydali</a></li>
           <li><a href="#">Video qo'llanma</a></li>
@@ -170,230 +182,230 @@
         <div class="categories__wrapper">
           <!-- category__box-1 -->
           <a href="./category-details.html" class="category__box">
-            <div class="icon communal">
+            <div class="category_icon communal">
               <i class="icon-communal"></i>
             </div>
             <h4>Kommunal soha</h4>
             <div class="application_number">
               <p>Murojaatlar soni:</p>
-              <span>52</span>
+              <span class="communal">52</span>
             </div>
           </a>
 
           <!-- category__box-2 -->
           <a href="./category-details.html" class="category__box">
-            <div class="icon transport">
+            <div class="category_icon transport">
               <i class="icon-transport"></i>
             </div>
             <h4>Transport</h4>
             <div class="application_number">
               <p>Murojaatlar soni:</p>
-              <span>54</span>
+              <span class="transport">54</span>
             </div>
           </a>
 
           <!-- category__box-3 -->
           <a href="./category-details.html" class="category__box">
             <span class="badge">Ommabop</span>
-            <div class="icon home">
+            <div class="category_icon home">
               <i class="icon-home"></i>
             </div>
             <h4>Uy-joy</h4>
             <div class="application_number">
               <p>Murojaatlar soni:</p>
-              <span>29</span>
+              <span class="home">29</span>
             </div>
           </a>
 
           <!-- category__box-4 -->
           <a href="./category-details.html" class="category__box">
-            <div class="icon shopping-cart">
+            <div class="category_icon shopping-cart">
               <i class="icon-shopping-cart"></i>
             </div>
             <h4>Savdo sohasi</h4>
             <div class="application_number">
               <p>Murojaatlar soni:</p>
-              <span>71</span>
+              <span class="shopping-cart">71</span>
             </div>
           </a>
 
           <!-- category__box-5 -->
           <a href="./category-details.html" class="category__box">
-            <div class="icon chemistry">
+            <div class="category_icon chemistry">
               <i class="icon-chemistry"></i>
             </div>
             <h4>Kimyo va kasmetika</h4>
             <div class="application_number">
               <p>Murojaatlar soni:</p>
-              <span>19</span>
+              <span class="chemistry">19</span>
             </div>
           </a>
 
           <!-- category__box-6 -->
           <a href="./category-details.html" class="category__box">
-            <div class="icon utility">
+            <div class="category_icon utility">
               <i class="icon-utility"></i>
             </div>
             <h4>Maishiy texnika</h4>
             <div class="application_number">
               <p>Murojaatlar soni:</p>
-              <span>27</span>
+              <span class="utility">27</span>
             </div>
           </a>
 
           <!-- category__box-7 -->
           <a href="./category-details.html" class="category__box">
-            <div class="icon healtcare">
+            <div class="category_icon healtcare">
               <i class="icon-healtcare"></i>
             </div>
             <h4>Xizmat ko'rsatish</h4>
             <div class="application_number">
               <p>Murojaatlar soni:</p>
-              <span>19</span>
+              <span class="healtcare">19</span>
             </div>
           </a>
 
           <!-- category__box-8 -->
           <a href="./category-details.html" class="category__box">
-            <div class="icon wifi">
+            <div class="category_icon wifi">
               <i class="icon-wifi"></i>
             </div>
             <h4>Aloqa</h4>
             <div class="application_number">
               <p>Murojaatlar soni:</p>
-              <span>51</span>
+              <span class="wifi">51</span>
             </div>
           </a>
 
           <!-- category__box-9 -->
           <a href="./category-details.html" class="category__box">
-            <div class="icon internet">
+            <div class="category_icon internet">
               <i class="icon-internet"></i>
             </div>
             <h4>Internet</h4>
             <div class="application_number">
               <p>Murojaatlar soni:</p>
-              <span>51</span>
+              <span class="internet">51</span>
             </div>
           </a>
 
           <!-- category__box-10 -->
           <a href="./category-details.html" class="category__box">
-            <div class="icon investigation">
+            <div class="category_icon investigation">
               <i class="icon-investigation"></i>
             </div>
             <h4>Lizing</h4>
             <div class="application_number">
               <p>Murojaatlar soni:</p>
-              <span>51</span>
+              <span class="investigation">51</span>
             </div>
           </a>
 
           <!-- category__box-11 -->
           <a href="./category-details.html" class="category__box">
-            <div class="icon mail">
+            <div class="category_icon mail">
               <i class="icon-mail"></i>
             </div>
             <h4>Pochta xizmati</h4>
             <div class="application_number">
               <p>Murojaatlar soni:</p>
-              <span>51</span>
+              <span class="mail">51</span>
             </div>
           </a>
 
           <!-- category__box-12 -->
           <a href="./category-details.html" class="category__box">
-            <div class="icon health-heart">
+            <div class="category_icon health-heart">
               <i class="icon-health-heart"></i>
             </div>
             <h4>Tibbiy soha</h4>
             <div class="application_number">
               <p>Murojaatlar soni:</p>
-              <span>51</span>
+              <span class="health-heart">51</span>
             </div>
           </a>
 
           <!-- category__box-13 -->
           <a href="./category-details.html" class="category__box">
-            <div class="icon master-cap">
+            <div class="category_icon master-cap">
               <i class="icon-master-cap"></i>
             </div>
             <h4>Ta'lim</h4>
             <div class="application_number">
               <p>Murojaatlar soni:</p>
-              <span>51</span>
+              <span class="master-cap">51</span>
             </div>
           </a>
 
           <!-- category__box-14 -->
           <a href="./category-details.html" class="category__box">
-            <div class="icon bank">
+            <div class="category_icon bank">
               <i class="icon-bank"></i>
             </div>
             <h4>Bank moliya</h4>
             <div class="application_number">
               <p>Murojaatlar soni:</p>
-              <span>51</span>
+              <span class="bank">51</span>
             </div>
           </a>
 
           <!-- category__box-15 -->
           <a href="./category-details.html" class="category__box">
-            <div class="icon tv-smart">
+            <div class="category_icon tv-smart">
               <i class="icon-tv-smart"></i>
             </div>
             <h4>TV xizmatidan foydalanish</h4>
             <div class="application_number">
               <p>Murojaatlar soni:</p>
-              <span>51</span>
+              <span class="tv-smart">51</span>
             </div>
           </a>
 
           <!-- category__box-16 -->
           <a href="./category-details.html" class="category__box">
-            <div class="icon wifi">
-              <i class="icon-wifi"></i>
+            <div class="category_icon megaphone">
+              <i class="icon-megaphone"></i>
             </div>
             <h4>Reklama</h4>
             <div class="application_number">
               <p>Murojaatlar soni:</p>
-              <span>51</span>
+              <span class="megaphone">51</span>
             </div>
           </a>
 
           <!-- category__box-17 -->
           <a href="./category-details.html" class="category__box">
-            <div class="icon give-pill">
+            <div class="category_icon give-pill">
               <i class="icon-give-pill"></i>
             </div>
             <h4>Farmasevtika</h4>
             <div class="application_number">
               <p>Murojaatlar soni:</p>
-              <span>51</span>
+              <span class="give-pill">51</span>
             </div>
           </a>
 
           <!-- category__box-18 -->
           <a href="./category-details.html" class="category__box">
-            <div class="icon airplane">
+            <div class="category_icon airplane">
               <i class="icon-airplane"></i>
             </div>
             <h4>Turizm</h4>
             <div class="application_number">
               <p>Murojaatlar soni:</p>
-              <span>51</span>
+              <span class="airplane">51</span>
             </div>
           </a>
 
           <!-- category__box-19 -->
           <a href="./category-details.html" class="category__box">
-            <div class="icon knife-fork">
+            <div class="category_icon knife-fork">
               <i class="icon-knife-fork"></i>
             </div>
             <h4>Umumiy ovqatlanish</h4>
             <div class="application_number">
               <p>Murojaatlar soni:</p>
-              <span>51</span>
+              <span class="knife-fork">51</span>
             </div>
           </a>
         </div>
@@ -421,8 +433,8 @@
               <!-- second column -->
               <div class="box__column second">
                 <small>Murojaat yo'nalishi:</small>
-                <div class="field_icon">
-                  <div class="icon communal">
+                <div class="field_icon__text">
+                  <div class="field_icon communal">
                     <i class="icon-communal"></i>
                   </div>
                   <b>Kommunal soha</b>
@@ -470,8 +482,8 @@
               <!-- second column -->
               <div class="box__column second">
                 <small>Murojaat yo'nalishi:</small>
-                <div class="field_icon">
-                  <div class="icon utility">
+                <div class="field_icon__text">
+                  <div class="field_icon utility">
                     <i class="icon-utility"></i>
                   </div>
                   <b>Maishiy texnika</b>
@@ -519,8 +531,8 @@
               <!-- second column -->
               <div class="box__column second">
                 <small>Murojaat yo'nalishi:</small>
-                <div class="field_icon">
-                  <div class="icon healtcare">
+                <div class="field_icon__text">
+                  <div class="field_icon healtcare">
                     <i class="icon-healtcare"></i>
                   </div>
                   <b>Xizmat ko'rsatish</b>
@@ -568,8 +580,8 @@
               <!-- second column -->
               <div class="box__column second">
                 <small>Murojaat yo'nalishi:</small>
-                <div class="field_icon">
-                  <div class="icon transport">
+                <div class="field_icon__text">
+                  <div class="field_icon transport">
                     <i class="icon-transport"></i>
                   </div>
                   <b>Transport</b>
@@ -617,8 +629,8 @@
               <!-- second column -->
               <div class="box__column second">
                 <small>Murojaat yo'nalishi:</small>
-                <div class="field_icon">
-                  <div class="icon home">
+                <div class="field_icon__text">
+                  <div class="field_icon home">
                     <i class="icon-home"></i>
                   </div>
                   <b>Xizmat ko'rsatish</b>
@@ -666,8 +678,8 @@
               <!-- second column -->
               <div class="box__column second">
                 <small>Murojaat yo'nalishi:</small>
-                <div class="field_icon">
-                  <div class="icon shopping-cart">
+                <div class="field_icon__text">
+                  <div class="field_icon shopping-cart">
                     <i class="icon-shopping-cart"></i>
                   </div>
                   <b>Xizmat ko'rsatish</b>
@@ -715,8 +727,8 @@
               <!-- second column -->
               <div class="box__column second">
                 <small>Murojaat yo'nalishi:</small>
-                <div class="field_icon">
-                  <div class="icon chemistry">
+                <div class="field_icon__text">
+                  <div class="field_icon chemistry">
                     <i class="icon-chemistry"></i>
                   </div>
                   <b>Xizmat ko'rsatish</b>
@@ -764,8 +776,8 @@
               <!-- second column -->
               <div class="box__column second">
                 <small>Murojaat yo'nalishi:</small>
-                <div class="field_icon">
-                  <div class="icon wifi">
+                <div class="field_icon__text">
+                  <div class="field_icon wifi">
                     <i class="icon-wifi"></i>
                   </div>
                   <b>Xizmat ko'rsatish</b>
@@ -873,157 +885,200 @@
         <!-- statistics indicators -->
         <div class="statistic__indicators">
           <h2 class="text-center">
-            Ko'rsatkichlar bo‘yicha TOP 10 tashkilotlar
+            Ko'rsatkichlar bo'yicha TOP 10 tashkilotlar
           </h2>
-          <table class="table table-striped">
-            <tr>
-              <th>№</th>
-              <th>Tashkilot nomi</th>
-              <th>Kelib tushgan murojaatlar</th>
-              <th>Hal qilingan murojaatlar</th>
-              <th>Foizda</th>
-            </tr>
-
-            <!-- tr-1 -->
-            <tr>
+          <div class="main-table">
+            <table class="table table-striped">
+              <tr>
+                <th>№</th>
+                <th>Tashkilot nomi</th>
+                <th>Kelib tushgan murojaatlar</th>
+                <th>Hal qilingan murojaatlar</th>
+                <th>Foizda</th>
+                <th>O'rtacha ko'rib chiqish muddati</th>
+              </tr>
+  
+             <!-- tr-1 -->
+             <tr>
               <td>1</td>
-              <td>Ta'lim vazirligi</td>
+              <td>
+                  <a href="./company-appeals.html"> Ta'lim vazirligi </a>
+              </td>
               <td><span>257</span></td>
               <td><span class="resolved__appeals_number">257</span></td>
               <td>
-                <span class="resolved__appeals_percent">
-                  <i class="icon-arrow-up"></i>
-                  82%
-                </span>
+                  <span class="resolved__appeals_percent">
+                      <i class="icon-arrow-up"></i>
+                      82%
+                  </span>
               </td>
-            </tr>
+              <td><span>15 ish kuni</span></td>
+          </tr>
 
-            <!-- tr-2 -->
-            <tr>
+          <!-- tr-2 -->
+          <tr>
               <td>2</td>
-              <td>Yoshlar ishlari agentligi</td>
+              <td>
+                  <a href="./company-appeals.html">
+                      Yoshlar ishlari agentligi
+                  </a>
+              </td>
               <td><span>257</span></td>
               <td><span class="resolved__appeals_number">257</span></td>
               <td>
-                <span class="resolved__appeals_percent">
-                  <i class="icon-arrow-up"></i>
-                  82%
-                </span>
+                  <span class="resolved__appeals_percent">
+                      <i class="icon-arrow-up"></i>
+                      82%
+                  </span>
               </td>
-            </tr>
+              <td><span>15 ish kuni</span></td>
+          </tr>
 
-            <!-- tr-3 -->
-            <tr>
+          <!-- tr-3 -->
+          <tr>
               <td>3</td>
-              <td>Bandlik</td>
+              <td>
+                  <a href="./company-appeals.html"> Bandlik </a>
+              </td>
               <td><span>257</span></td>
               <td><span class="resolved__appeals_number">257</span></td>
               <td>
-                <span class="resolved__appeals_percent">
-                  <i class="icon-arrow-up"></i>
-                  82%
-                </span>
+                  <span class="resolved__appeals_percent">
+                      <i class="icon-arrow-up"></i>
+                      82%
+                  </span>
               </td>
-            </tr>
+              <td><span>15 ish kuni</span></td>
+          </tr>
 
-            <!-- tr-4 -->
-            <tr>
+          <!-- tr-4 -->
+          <tr>
               <td>4</td>
-              <td>Pochta MTM</td>
+              <td><a href="./company-appeals.html"> Pochta MTM </a></td>
               <td><span>257</span></td>
               <td><span class="resolved__appeals_number">257</span></td>
               <td>
-                <span class="resolved__appeals_percent">
-                  <i class="icon-arrow-up"></i>
-                  82%
-                </span>
+                  <span class="resolved__appeals_percent">
+                      <i class="icon-arrow-up"></i>
+                      82%
+                  </span>
               </td>
-            </tr>
+              <td><span>15 ish kuni</span></td>
+          </tr>
 
-            <!-- tr-5 -->
-            <tr>
+          <!-- tr-5 -->
+          <tr>
               <td>5</td>
-              <td>Bank va moliya boshqarmasi</td>
+              <td>
+                  <a href="./company-appeals.html">
+                      Bank va moliya boshqarmasi
+                  </a>
+              </td>
               <td><span>257</span></td>
               <td><span class="resolved__appeals_number">257</span></td>
               <td>
-                <span class="resolved__appeals_percent">
-                  <i class="icon-arrow-up"></i>
-                  82%
-                </span>
+                  <span class="resolved__appeals_percent">
+                      <i class="icon-arrow-up"></i>
+                      82%
+                  </span>
               </td>
-            </tr>
+              <td><span>15 ish kuni</span></td>
+          </tr>
 
-            <!-- tr-6 -->
-            <tr>
+          <!-- tr-6 -->
+          <tr>
               <td>6</td>
-              <td>Yoshlar ishlari agentligi</td>
+              <td>
+                  <a href="./company-appeals.html">
+                      Yoshlar ishlari agentligi
+                  </a>
+              </td>
               <td><span>257</span></td>
               <td><span class="resolved__appeals_number">257</span></td>
               <td>
-                <span class="resolved__appeals_percent">
-                  <i class="icon-arrow-up"></i>
-                  82%
-                </span>
+                  <span class="resolved__appeals_percent">
+                      <i class="icon-arrow-up"></i>
+                      82%
+                  </span>
               </td>
-            </tr>
+              <td><span>15 ish kuni</span></td>
+          </tr>
 
-            <!-- tr-7 -->
-            <tr>
+          <!-- tr-7 -->
+          <tr>
               <td>7</td>
-              <td>Pochta</td>
+              <td>
+                  <a href="./company-appeals.html"> Pochta </a>
+              </td>
               <td><span>257</span></td>
               <td><span class="resolved__appeals_number">257</span></td>
               <td>
-                <span class="resolved__appeals_percent">
-                  <i class="icon-arrow-up"></i>
-                  82%
-                </span>
+                  <span class="resolved__appeals_percent">
+                      <i class="icon-arrow-up"></i>
+                      82%
+                  </span>
               </td>
-            </tr>
+              <td><span>15 ish kuni</span></td>
+          </tr>
 
-            <!-- tr-8 -->
-            <tr>
+          <!-- tr-8 -->
+          <tr>
               <td>8</td>
-              <td>Maishiy texnika</td>
+              <td>
+                  <a href="./company-appeals.html"> Maishiy texnika </a>
+              </td>
               <td><span>257</span></td>
               <td><span class="resolved__appeals_number">257</span></td>
               <td>
-                <span class="resolved__appeals_percent">
-                  <i class="icon-arrow-up"></i>
-                  82%
-                </span>
+                  <span class="resolved__appeals_percent">
+                      <i class="icon-arrow-up"></i>
+                      82%
+                  </span>
               </td>
-            </tr>
+              <td><span>15 ish kuni</span></td>
+          </tr>
 
-            <!-- tr-9 -->
-            <tr>
+          <!-- tr-9 -->
+          <tr>
               <td>9</td>
-              <td>Savdo sohasi</td>
+              <td>
+                  <a href="./company-appeals.html"> Savdo sohasi </a>
+              </td>
               <td><span>257</span></td>
               <td><span class="resolved__appeals_number">257</span></td>
               <td>
-                <span class="resolved__appeals_percent">
-                  <i class="icon-arrow-up"></i>
-                  82%
-                </span>
+                  <span class="resolved__appeals_percent">
+                      <i class="icon-arrow-up"></i>
+                      82%
+                  </span>
               </td>
-            </tr>
+              <td><span>15 ish kuni</span></td>
+          </tr>
 
-            <!-- tr-10 -->
-            <tr>
+          <!-- tr-10 -->
+          <tr>
               <td>10</td>
-              <td>Internet</td>
+              <td>
+                  <a href="./company-appeals.html"> Internet </a>
+              </td>
               <td><span>257</span></td>
               <td><span class="resolved__appeals_number">257</span></td>
               <td>
-                <span class="resolved__appeals_percent">
-                  <i class="icon-arrow-up"></i>
-                  82%
-                </span>
+                  <span class="resolved__appeals_percent">
+                      <i class="icon-arrow-up"></i>
+                      82%
+                  </span>
               </td>
-            </tr>
-          </table>
+              <td><span>15 ish kuni</span></td>
+          </tr>
+
+            </table> 
+          </div>
+
+          <!-- load btn -->
+          <a href="./companies-list.html" class="btn btn-primary py-40 mt-3">
+            Barcha tashkilotlar
+          </a>
         </div>
       </div>
     </section>
@@ -1077,7 +1132,7 @@
             <div class="regions__info_wrapper">
               <!-- regions info box-1 -->
               <div class="regions__info_box">
-                <div class="icon">
+                <div class="regions__info_icon">
                   <i class="icon-city"></i>
                 </div>
                 <h4>1557</h4>
@@ -1086,7 +1141,7 @@
 
               <!-- regions info box-2 -->
               <div class="regions__info_box">
-                <div class="icon">
+                <div class="regions__info_icon">
                   <i class="icon-file"></i>
                 </div>
                 <h4>124 200 ta</h4>
@@ -1095,7 +1150,7 @@
 
               <!-- regions info box-3 -->
               <div class="regions__info_box">
-                <div class="icon">
+                <div class="regions__info_icon">
                   <i class="icon-checkmark-circle"></i>
                 </div>
                 <h4>24 200 ta</h4>
@@ -1104,7 +1159,7 @@
 
               <!-- regions info box-4 -->
               <div class="regions__info_box">
-                <div class="icon">
+                <div class="regions__info_icon">
                   <i class="icon-calendar"></i>
                 </div>
                 <h4>15 kun</h4>
@@ -1210,49 +1265,19 @@
   <!-- footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer__first_row">
-        <div class="footer__first_right">
-          <a href="#"> LOGO </a>
-          <p>
-            Design amazing digital experiences that create more happy in the
-            world.
-          </p>
-          <ul>
-            <li><a href="#">Bosh sahifa</a></li>
-            <li><a href="#">Biz haqimizda</a></li>
-            <li><a href="#">Aloqa</a></li>
-            <li><a href="#">Bilish foydali</a></li>
-            <li><a href="#">Video qo'llanma</a></li>
-          </ul>
-        </div>
-        <div class="footer__first_middle">
-          <div class="phone_number">
-            <p>Ishonch telefoni</p>
-            <a href="tel:+998944986565">+998944986565</a>
-          </div>
-          <div class="call_center">
-            <p>Call center</p>
-            <h5>8123</h5>
-          </div>
-        </div>
-        <div class="footer__first_left">
-          <p>Get the app</p>
-          <img src="./assets/images/features/app-store.svg" alt="app-store" />
-          <img src="./assets/images/features/google-play.svg" alt="google-play" />
-        </div>
-      </div>
-      <div class="line"></div>
       <div class="footer__second_row">
         <div class="footer__second_right">
-          <img src="./assets/images/features/uzex-logo.svg" alt="uzex-logo" />
+          <a href="www.uzex.uz" target="_blank"><img src="./assets/images/features/uzex-logo.svg" alt="uzex-logo" /></a>
           <p>
-            Design amazing digital experiences that create more happy in the
-            world.
+            Saytdagi ma'lumotlardan foydalanilganda <a href="www.uzex.uz" class="text-primary"
+              target="_blank">www.uzex.uz</a>
+            saytiga havola qilish majburiy.
           </p>
         </div>
         <div class="footer__second_middle">
           <p>
-            <span>Telefon raqam:</span><a href="tel:+998712070033">+998712070033</a>
+            <span>Telefon raqamlari:</span><a href="tel:+998712070033">+998712070033</a> /
+            <a href="tel:8123">8123</a>
           </p>
           <p><span>Faks:</span><a href="#">213-33-00</a></p>
           <p>
@@ -1263,25 +1288,22 @@
           </p>
         </div>
         <div class="footer__second_left">
-          <p>
-            Saytdagi ma'lumotlardan foydalanilganda <a href="www.uzex.uz">www.uzex.uz</a>veb-saytiga havola qilish
-            majburiy.
-          </p>
+          <p>Ilovani yuklab oling</p>
+          <img src="./assets/images/features/app-store.svg" alt="app-store" />
+          <img src="./assets/images/features/google-play.svg" alt="google-play" />
+          <div class="social_medias">
+            <i class="icon-youtube"></i>
+            <i class="icon-telegram"></i>
+            <i class="icon-instagram"></i>
+          </div>
         </div>
       </div>
       <div class="line"></div>
       <div class="footer__third_row">
-        <p>© 2077 Untitled UI. All rights reserved.</p>
-        <div class="social_medias">
-          <i class="icon-youtube"></i>
-          <i class="icon-telegram"></i>
-          <i class="icon-instagram"></i>
-        </div>
+        <p>© 2024 All rights reserved.</p>
       </div>
     </div>
   </footer>
-
-
 
   <!-- BOOTSTRAP BUNDLE.JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -1290,7 +1312,6 @@
 
   <!-- FLATPICKR.JS -->
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-
 
   <!-- HIGHCHART.JS -->
   <script src="https://code.highcharts.com/highcharts.js" defer></script>
