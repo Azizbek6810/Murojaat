@@ -304,6 +304,10 @@ document.addEventListener("DOMContentLoaded", function () {
       min: 0,
       stops: [[0, "#2E90FA"]],
     },
+    
+    legend: {
+      enabled: false,
+    },
 
     series: [
       {
