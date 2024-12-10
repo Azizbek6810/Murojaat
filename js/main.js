@@ -79,9 +79,12 @@ document.addEventListener("DOMContentLoaded", function () {
     title: {
       text: "E'tirozli holatlar bo'yicha",
     },
-    // subtitle: {
-    //     text: 'Source: <a href="https://www.ssb.no/transport-og-reiseliv/faktaside/bil-og-transport">SSB</a>'
-    // },
+    credits: {
+      enabled: false,
+    },
+    exporting: {
+      enabled: false,
+    },
     tooltip: {
       pointFormat: "{series.name}: <b>{point.percentage:.0f}%</b>",
     },
@@ -180,6 +183,12 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     title: {
       text: "E'tirozli sohalar bo'yicha",
+    },
+    credits: {
+      enabled: false,
+    },
+    exporting: {
+      enabled: false,
     },
     // subtitle: {
     //     text: 'Source: <a href="https://www.ssb.no/transport-og-reiseliv/faktaside/bil-og-transport">SSB</a>'
@@ -283,11 +292,12 @@ document.addEventListener("DOMContentLoaded", function () {
     title: {
       text: "Uzbekistan map",
     },
-
-    // subtitle: {
-    //     text: 'Source map: <a href="https://code.highcharts.com/mapdata/countries/uz/uz-all.topo.json">Uzbekistan</a>'
-    // },
-
+    credits: {
+      enabled: false,
+    },
+    exporting: {
+      enabled: false,
+    },
     mapNavigation: {
       enabled: true,
       buttonOptions: {
@@ -297,7 +307,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     colorAxis: {
       min: 0,
-      stops: [[0, '#2E90FA']]
+      stops: [[0, "#2E90FA"]],
     },
 
     series: [
@@ -307,7 +317,7 @@ document.addEventListener("DOMContentLoaded", function () {
         states: {
           hover: {
             color: "#B2DDFF",
-            borderColor: 'white',
+            borderColor: "white",
           },
         },
         dataLabels: {

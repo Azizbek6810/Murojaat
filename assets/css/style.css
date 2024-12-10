@@ -665,9 +665,6 @@ header {
 
 .section-objection {
   margin-top: 100px;
-  /* background-image: url("../images/features/objection-bg.webp"); 
-  background-repeat: no-repeat;
-  background-size: cover;*/
   background-color: var(--title-text-color);
   padding: 82px 0;
   text-align: center;
