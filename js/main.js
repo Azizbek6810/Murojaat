@@ -31,11 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
     isExpanded = !isExpanded;
   });
 
-  flatpickr("#datepicker", {
-    dateFormat: "m/d/Y",
-    defaultDate: "today",
-  });
-
   Highcharts.chart("highcharts_container", {
     chart: {
       type: "pie",
