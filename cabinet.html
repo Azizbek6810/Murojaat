@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Client cabinet</title>
 
     <!-- BOOTSTRAP LINK -->
@@ -18,118 +18,212 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row flex-nowrap">
-            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light shadow p-3 mb-5 bg-body rounded">
-                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-                    <a href="/"
-                        class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                        <span class="fs-5 d-none d-sm-inline">Menu</span>
-                    </a>
-                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
-                        id="menu">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link align-middle px-0">
-                                <i class="fs-4 icon-file"></i> <span class="ms-1 d-none d-sm-inline">Arizalarim</span>
+    <section class="section-cabinet">
+        <div class="container-fluid">
+            <div class="row flex-nowrap">
+                <div class="right_sidebar col-auto col-md-3 col-xl-2 px-sm-2 bg-body shadow">
+                    <div
+                        class="d-flex flex-column align-items-center align-items-sm-start min-vh-100 px-3 gap-3 bg-body">
+                        <div class="header__logo">
+                            <a href="index.html" class="cabinet_logo__link">
+                                <img src="./assets/images/features/logo.png" alt="logo" />
                             </a>
-                        </li>
-                        <li>
-                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <i class="fs-4 icon-notification-box"></i> <span
-                                    class="ms-1 d-none d-sm-inline">Bildirishnomalar</span> </a>
-                            <ul class="collapse nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link px-0 align-middle">
-                                <i class="fs-4 icon-bar-chart"></i> <span class="ms-1 d-none d-sm-inline">Menu</span></a>
-                        </li>
-                        <li>
-                            <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
-                                <i class="fs-4 icon-investigation"></i> <span
-                                    class="ms-1 d-none d-sm-inline">Ma'lumotlar</span></a>
-                            <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span>
-                                        1</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span>
-                                        2</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <i class="fs-4 icon-shopping-cart"></i> <span class="ms-1 d-none d-sm-inline">Products</span> </a>
-                            <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span>
-                                        1</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span>
-                                        2</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span>
-                                        3</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span>
-                                        4</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link px-0 align-middle">
-                                <i class="fs-4 icon-users"></i> <span class="ms-1 d-none d-sm-inline">Customers</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <hr>
-                    <div class="dropdown pb-4">
-                        <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle"
-                            id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30"
-                                class="rounded-circle">
-                            <span class="d-none d-sm-inline mx-1">loser</span>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text" id="qidirish">
+                                <i class="icon-search"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Qidirish" aria-label="Qidirish
+                              aria-describedby=" qidirish />
+                        </div>
+                        <a href="#" class="cabinet_customer">
+                            <span>Azima Suyunova</span>
+                            <small>Foydalanuvchi</small>
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-                            <li><a class="dropdown-item" href="#">New project...</a></li>
-                            <li><a class="dropdown-item" href="#">Settings</a></li>
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
+                        <ul class="nav nav-pills w-100 flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start custom_ul gap-2"
+                            id="menu">
+                            <li class="nav-item w-100">
+                                <a href="#"
+                                    class="nav-link px-2 d-flex justify-content-between align-items-center w-100 ">
+                                    <span class="sidebar_link__wrapper">
+                                        <i class="icon-plus"></i>
+                                        <small class="d-none d-sm-inline">
+                                            Yangi arizalar
+                                        </small>
+                                    </span>
+                                </a>
                             </li>
-                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                            <li class="nav-item w-100">
+                                <a href="#"
+                                    class="nav-link px-2 d-flex justify-content-between align-items-center w-100 ">
+                                    <span class="sidebar_link__wrapper">
+                                        <i class="icon-file"></i>
+                                        <small class="d-none d-sm-inline">
+                                            Arizalarim
+                                        </small>
+                                    </span>
+                                    <span class="badge">10</span>
+                                </a>
+                            </li>
+                            <li class="nav-item w-100">
+                                <a href="#bildirishnoma"
+                                    class="nav-link px-2 d-flex justify-content-between align-items-center w-100"
+                                    data-bs-toggle="collapse">
+                                    <span class="sidebar_link__wrapper">
+                                        <i class="icon-notification-box"></i>
+                                        <small class="d-none d-sm-inline">
+                                            Bildirishnomalar
+                                        </small>
+                                    </span>
+                                    <!-- <span class="badge">5</span> -->
+                                </a>
+
+                                <!-- submenu -->
+                                <!-- <ul class="collapse nav flex-column " id="bildirishnoma" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="#" class="nav-link px-0">
+                                            <span class="d-none d-sm-inline">Item</span>
+                                            1
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0">
+                                            <span class="d-none d-sm-inline">Item</span>
+                                            2
+                                        </a>
+                                    </li>
+                                </ul> -->
+                            </li>
+                            <li class="nav-item w-100">
+                                <a href="#"
+                                    class="nav-link px-2 d-flex justify-content-between align-items-center w-100">
+                                    <span class="sidebar_link__wrapper">
+                                        <i class="icon-bar-chart"></i>
+                                        <small class="d-none d-sm-inline">
+                                            Menu
+                                        </small>
+                                    </span>
+                                    <span class="badge">22</span>
+                                </a>
+                            </li>
+                            <li class="nav-item w-100">
+                                <!-- <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 ">
+                                    <i class="icon-investigation"></i>
+                                    <span class=" d-none d-sm-inline">Ma'lumotlar</span></a> -->
+                                <a href="#malumotlar"
+                                    class="nav-link px-2 d-flex justify-content-between align-items-center w-100"
+                                    data-bs-toggle="collapse">
+                                    <span class="sidebar_link__wrapper">
+                                        <i class="icon-investigation"></i>
+                                        <small class="d-none d-sm-inline">
+                                            Ma'lumotlar
+                                        </small>
+                                    </span>
+                                </a>
+                                <ul class="collapse nav flex-column " id="malumotlar" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="#" class="nav-link px-0">
+                                            <span class="d-none d-sm-inline">Item</span> 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0">
+                                            <span class="d-none d-sm-inline">Item</span> 2</a>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
+                        <!-- <hr />
+                        <div class="dropdown pb-4">
+                            <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle"
+                                id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30"
+                                    class="rounded-circle" />
+                                <span class="d-none d-sm-inline mx-1">loser</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark text-small shadow"
+                                aria-labelledby="dropdownUser1">
+                                <li><a class="dropdown-item" href="#">New project...</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item" href="#">Sign out</a></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="left_sidebar col">
+                    <div class="left_sidebar__wrapper">
+                        <div class="left_sidebar__header">
+                            <div class="left_sidebar__header_top">
+                                <div class="left_sidebar__appeals">
+                                    <h4>Murojaatlarim</h4>
+                                    <p>Jami murojaatlar: <span>15 ta</span></p>
+                                </div>
+                            </div>
+                            <div class="left_sidebar__header_middle">
+                                <div class="left_sidebar__filter_wrapper">
+
+                                    <!-- box 1 -->
+                                    <div class="left_sidebar__filter_box">
+                                        <span>All time</span>
+                                        <i class="icon-x-close"></i>
+                                    </div>
+
+                                    <!-- box 2 -->
+                                    <div class="left_sidebar__filter_box">
+                                        <span>US, AU, +4</span>
+                                        <i class="icon-x-close"></i>
+                                    </div>
+
+                                    <!-- box 3 -->
+                                    <div class="left_sidebar__filter_box">
+                                        <i class="icon-filter-lines"></i>
+                                        <span>More filters</span>
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex">
+                                    <span class="input-group-text" id="qidirish">
+                                        <i class="icon-search"></i>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Qidirish" aria-label="Qidirish"
+                                        aria-describedby="qidirish" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="left_sidebar__body">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                        aria-selected="true">Barchasi <span class="badge">57</span></button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">Profile</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-contact" type="button" role="tab"
+                                        aria-controls="pills-contact" aria-selected="false">Contact</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">...</div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab">...</div>
+                                <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                    aria-labelledby="pills-contact-tab">...</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col py-3">
-                <h3>Left Sidebar with Submenus</h3>
-                <p class="lead">
-                    An example 2-level sidebar with collasible menu items. The menu functions like an "accordion" where
-                    only a single
-                    menu is be open at a time. While the sidebar itself is not toggle-able, it does responsively shrink
-                    in width on smaller screens.</p>
-                <ul class="list-unstyled">
-                    <li>
-                        <h5>Responsive</h5> shrinks in width, hides text labels and collapses to icons only on mobile
-                    </li>
-                </ul>
-            </div>
         </div>
-    </div>
+    </section>
 
     <!-- BOOTSTRAP BUNDLE.JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

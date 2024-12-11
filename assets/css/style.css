@@ -8,6 +8,7 @@
 @import "./companies-list.css";
 @import "./company-appeals.css";
 @import "./appeals-list.css";
+@import "./cabinet.css";
 
 :root {
   --main-text-color: #535862;
@@ -269,11 +270,17 @@ header {
   border-radius: 5px;
 }
 
-.header__logo img{
+img[alt="logo"]{
   width: 139px;
   object-fit: contain;
   scale: 1.5;
 }
+
+/* SEARCH INPUT */
+
+/* .input-group-text{
+ background-color: var(--white);
+} */
 
 /* HERO SECTION STYLE */
 
@@ -495,7 +502,7 @@ header {
   color: var(--title-text-color);
 }
 
-.badge {
+.category__box .badge {
   position: absolute;
   color: var(--white);
   background-color: var(--bs-red);
