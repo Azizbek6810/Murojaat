@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client cabinet</title>
+
+    <!-- BOOTSTRAP LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- ICOMOON LINK -->
+    <link rel="stylesheet" href="./assets/icomoon/style.css" />
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+
+    <!-- STYLE CSS LINK -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <section class="section-cabinet">
+        <div class="container-fluid">
+            <div class="row flex-nowrap">
+                <div class="right_sidebar col-auto col-md-3 col-xl-2 px-sm-2 bg-body shadow">
+                    <div
+                        class="d-flex flex-column align-items-center align-items-sm-start min-vh-100 px-3 gap-3 bg-body">
+                        <div class="header__logo">
+                            <a href="index.html" class="cabinet_logo__link">
+                                <img src="./assets/images/features/logo.png" alt="logo" />
+                            </a>
+                        </div>
+                        <a href="#" class="cabinet_customer">
+                            <span>Azima Suyunova</span>
+                            <small class="badge bg-warning text-white d-flex"><i
+                                    class="fa-solid fa-building fs-5 me-2"></i>Foydalanuvchi</small>
+                        </a>
+                        <ul class="custom_ul nav nav-pills w-100 flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start  gap-2"
+                            id="menu">
+                            <li class="nav-item w-100">
+                                <button href="#"
+                                    class=" px-2 d-flex justify-content-between align-items-center w-100 btn btn-primary">
+                                    <span class="sidebar_link__wrapper">
+                                        <i class="icon-plus"></i>
+                                        <small class="d-none d-sm-inline fs-6">
+                                            Ariza qoldirish
+                                        </small>
+                                    </span>
+                                </button>
+                            </li>
+                            <li class="nav-item w-100">
+                                <a href="#"
+                                    class="nav-link px-2 d-flex justify-content-between align-items-center w-100 ">
+                                    <span class="sidebar_link__wrapper">
+                                        <i class="icon-file"></i>
+                                        <small class="d-none d-sm-inline">
+                                            Arizalarim
+                                        </small>
+                                    </span>
+                                    <span class="badge">10</span>
+                                </a>
+                            </li>
+                            <li class="nav-item w-100">
+                                <a href="#bildirishnoma"
+                                    class="nav-link px-2 d-flex justify-content-between align-items-center w-100"
+                                    data-bs-toggle="collapse">
+                                    <span class="sidebar_link__wrapper">
+                                        <i class="icon-notification-box"></i>
+                                        <small class="d-none d-sm-inline">
+                                            Bildirishnomalar
+                                        </small>
+                                    </span>
+                                </a>
+                                <!-- submenu -->
+                                <!-- <ul class="collapse nav flex-column " id="bildirishnoma" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="#" class="nav-link px-0">
+                                            <span class="d-none d-sm-inline">Item</span>
+                                            1
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0">
+                                            <span class="d-none d-sm-inline">Item</span>
+                                            2
+                                        </a>
+                                    </li>
+                                </ul> -->
+                            </li>
+                            <li class="nav-item w-100">
+                                <a href="#"
+                                    class="nav-link px-2 d-flex justify-content-between align-items-center w-100">
+                                    <span class="sidebar_link__wrapper">
+                                        <i class="icon-bar-chart"></i>
+                                        <small class="d-none d-sm-inline">
+                                            Menu
+                                        </small>
+                                    </span>
+                                    <span class="badge">22</span>
+                                </a>
+                            </li>
+                            <li class="nav-item w-100">
+                                <a href="#malumotlar"
+                                    class="nav-link px-2 d-flex justify-content-between align-items-center w-100"
+                                    data-bs-toggle="collapse">
+                                    <span class="sidebar_link__wrapper">
+                                        <i class="icon-investigation"></i>
+                                        <small class="d-none d-sm-inline">
+                                            Ma'lumotlar
+                                        </small>
+                                    </span>
+                                </a>
+                                <ul class="collapse nav flex-column " id="malumotlar" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="#" class="nav-link px-0">
+                                            <span class="d-none d-sm-inline">Item</span> 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0">
+                                            <span class="d-none d-sm-inline">Item</span> 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <div class="line"></div>
+                            <li class="nav-item w-100">
+                                <button href="#"
+                                    class=" px-2 d-flex justify-content-between align-items-center w-100 btn btn-danger">
+                                    <span class="sidebar_link__wrapper">
+                                        <i class="icon-home-line"></i>
+                                        <small class="d-none d-sm-inline fs-6">
+                                            Kabinetdan chiqish
+                                        </small>
+                                    </span>
+                                </button>
+                            </li>
+                        </ul>
+                        <hr />
+                        <div class="text-center pb-4 lead">
+                            App version: 1.0.0
+                        </div>
+                    </div>
+                </div>
+                <div class="left_sidebar col">
+                    <div class="left_sidebar__wrapper">
+                        <div class="left_sidebar__header">
+                            <div class="left_sidebar__header_top">
+                                <div class="left_sidebar__appeals">
+                                    <h4>Murojaatlarim</h4>
+                                    <p>Jami murojaatlar: <span>15 ta</span></p>
+                                </div>
+                            </div>
+                            <div class="left_sidebar__header_middle">
+                                <div class="left_sidebar__filter_wrapper">
+
+                                    <!-- box 1 -->
+                                    <div class="left_sidebar__filter_box">
+                                        <span>All time</span>
+                                        <i class="icon-x-close"></i>
+                                    </div>
+
+                                    <!-- box 2 -->
+                                    <div class="left_sidebar__filter_box">
+                                        <span>US, AU, +4</span>
+                                        <i class="icon-x-close"></i>
+                                    </div>
+
+                                    <!-- box 3 -->
+                                    <div class="left_sidebar__filter_box">
+                                        <i class="icon-filter-lines"></i>
+                                        <span>More filters</span>
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex">
+                                    <span class="input-group-text" id="qidirish">
+                                        <i class="icon-search"></i>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Qidirish" aria-label="Qidirish"
+                                        aria-describedby="qidirish" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="left_sidebar__body">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                        aria-selected="true">Barchasi <span class="badge">57</span></button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">Profile</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-contact" type="button" role="tab"
+                                        aria-controls="pills-contact" aria-selected="false">Contact</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">...</div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab">...</div>
+                                <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                    aria-labelledby="pills-contact-tab">...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOTSTRAP BUNDLE.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+        defer></script>
+
+    <!-- HIGHCHART.JS -->
+    <script src="https://code.highcharts.com/highcharts.js" defer></script>
+    <script src="https://code.highcharts.com/modules/exporting.js" defer></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js" defer></script>
+
+    <!-- HIGHMAPS.JS -->
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+
+    <!-- MAIN.JS -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
