@@ -115,17 +115,17 @@
 
 /* LEFT SIDEBAR */
 
-.right_sidebar .fixed {
+.left_sidebar .fixed {
     left: 0;
     top: 0;
     position: sticky;
 }
 
-.left_sidebar {
+.right_sidebar {
     padding: 32px;
 }
 
-.left_sidebar__header {
+.right_sidebar__header {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,13 +133,13 @@
     margin-bottom: 32px;
 }
 
-.left_sidebar__header_top {
+.right_sidebar__header_top {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.left_sidebar__body_middle {
+.right_sidebar__body_middle {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -149,7 +149,7 @@
     width: fit-content;
 }
 
-.left_sidebar__appeals h4 {
+.right_sidebar__appeals h4 {
     color: var(--title-text-color);
     font-size: 24px;
     font-weight: 600;
@@ -158,7 +158,7 @@
     text-align: left;
 }
 
-.left_sidebar__appeals p {
+.right_sidebar__appeals p {
     color: var(--main-text-color);
     font-size: 16px;
     font-weight: 400;
@@ -167,18 +167,18 @@
     text-align: left;
 }
 
-.left_sidebar__appeals span {
+.right_sidebar__appeals span {
     color: var(--title-text-color);
     font-weight: 500;
 }
 
-.left_sidebar__filter_wrapper {
+.right_sidebar__filter_wrapper {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.left_sidebar__filter_box {
+.right_sidebar__filter_box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -191,7 +191,7 @@
 
 }
 
-.left_sidebar__filter_box:hover {
+.right_sidebar__filter_box:hover {
     box-shadow:
         0px 1px 2px 0px rgba(10, 13, 18, 0.05),
         inset 0px -2px 0px 0px rgba(10, 13, 18, 0.05),
@@ -199,25 +199,24 @@
 
 }
 
-.left_sidebar__filter_box i {
+.right_sidebar__filter_box i {
     font-size: 20px;
     color: #414651;
 }
 
-.left_sidebar__filter_box i:hover {
+.right_sidebar__filter_box i:hover {
     color: var(--bs-red);
 }
 
-.left_sidebar__filter_box span {
+.right_sidebar__filter_box span {
     color: #414651;
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;
 }
 
-.left_sidebar__body{}
 
-.left_sidebar__body .nav-pills .nav-link {
+.right_sidebar__body .nav-pills .nav-link {
     background-color: transparent;
     border: 2px solid var(--gray-100);
     background: rgb(250, 250, 250);
@@ -228,7 +227,7 @@
     line-height: 20px;
 }
 
-.left_sidebar__body .nav-pills .nav-link.active {
+.right_sidebar__body .nav-pills .nav-link.active {
     background-color: transparent;
     border: 2px solid var(--blurLight-color);
     color: var(--color-gray-600);

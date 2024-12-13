@@ -24,188 +24,888 @@
     <section class="section-cabinet">
         <div class="container-fluid">
             <div class="row flex-nowrap">
-                <div class="right_sidebar col-auto col-md-3 col-xl-2 px-sm-2 bg-body shadow">
-                    <div
-                        class="d-flex flex-column align-items-center align-items-sm-start min-vh-100 px-3 gap-3 bg-body">
-                        <div class="header__logo">
-                            <a href="index.html" class="cabinet_logo__link">
-                                <img src="./assets/images/features/logo.png" alt="logo" />
+                <div class="left_sidebar col-auto col-md-3 col-xl-2 px-sm-2 bg-body shadow">
+                    <div class="fixed">
+                        <div
+                            class="d-flex flex-column align-items-center align-items-sm-start min-vh-100 px-3 gap-3 bg-body">
+                            <div class="header__logo">
+                                <a href="index.html" class="cabinet_logo__link">
+                                    <img src="./assets/images/features/logo.png" alt="logo" />
+                                </a>
+                            </div>
+                            <a href="#" class="cabinet_customer">
+                                <span>Azima Suyunova</span>
+                                <small class="badge bg-warning text-white d-flex"><i
+                                        class="fa-solid fa-building fs-5 me-2"></i>Foydalanuvchi</small>
                             </a>
-                        </div>
-                        <a href="#" class="cabinet_customer">
-                            <span>Azima Suyunova</span>
-                            <small class="badge bg-warning text-white d-flex"><i
-                                    class="fa-solid fa-building fs-5 me-2"></i>Foydalanuvchi</small>
-                        </a>
-                        <ul class="custom_ul nav nav-pills w-100 flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start  gap-2"
-                            id="menu">
-                            <li class="nav-item w-100">
-                                <button href="#"
-                                    class=" px-2 d-flex justify-content-between align-items-center w-100 btn btn-primary">
-                                    <span class="sidebar_link__wrapper">
-                                        <i class="icon-plus"></i>
-                                        <small class="d-none d-sm-inline fs-6">
-                                            Ariza qoldirish
-                                        </small>
-                                    </span>
-                                </button>
-                            </li>
-                            <li class="nav-item w-100">
-                                <a href="#"
-                                    class="nav-link px-2 d-flex justify-content-between align-items-center w-100 ">
-                                    <span class="sidebar_link__wrapper">
-                                        <i class="icon-file"></i>
-                                        <small class="d-none d-sm-inline">
-                                            Arizalarim
-                                        </small>
-                                    </span>
-                                    <span class="badge">10</span>
-                                </a>
-                            </li>
-                            <li class="nav-item w-100">
-                                <a href="#bildirishnoma"
-                                    class="nav-link px-2 d-flex justify-content-between align-items-center w-100"
-                                    data-bs-toggle="collapse">
-                                    <span class="sidebar_link__wrapper">
-                                        <i class="icon-notification-box"></i>
-                                        <small class="d-none d-sm-inline">
-                                            Bildirishnomalar
-                                        </small>
-                                    </span>
-                                </a>
-                                <!-- submenu -->
-                                <!-- <ul class="collapse nav flex-column " id="bildirishnoma" data-bs-parent="#menu">
-                                    <li class="w-100">
-                                        <a href="#" class="nav-link px-0">
-                                            <span class="d-none d-sm-inline">Item</span>
-                                            1
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="nav-link px-0">
-                                            <span class="d-none d-sm-inline">Item</span>
-                                            2
-                                        </a>
-                                    </li>
-                                </ul> -->
-                            </li>
-                            <li class="nav-item w-100">
-                                <a href="#"
-                                    class="nav-link px-2 d-flex justify-content-between align-items-center w-100">
-                                    <span class="sidebar_link__wrapper">
-                                        <i class="icon-bar-chart"></i>
-                                        <small class="d-none d-sm-inline">
-                                            Menu
-                                        </small>
-                                    </span>
-                                    <span class="badge">22</span>
-                                </a>
-                            </li>
-                            <li class="nav-item w-100">
-                                <a href="#malumotlar"
-                                    class="nav-link px-2 d-flex justify-content-between align-items-center w-100"
-                                    data-bs-toggle="collapse">
-                                    <span class="sidebar_link__wrapper">
-                                        <i class="icon-investigation"></i>
-                                        <small class="d-none d-sm-inline">
-                                            Ma'lumotlar
-                                        </small>
-                                    </span>
-                                </a>
-                                <ul class="collapse nav flex-column " id="malumotlar" data-bs-parent="#menu">
-                                    <li class="w-100">
-                                        <a href="#" class="nav-link px-0">
-                                            <span class="d-none d-sm-inline">Item</span> 1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="nav-link px-0">
-                                            <span class="d-none d-sm-inline">Item</span> 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <div class="line"></div>
-                            <li class="nav-item w-100">
-                                <button href="#"
-                                    class=" px-2 d-flex justify-content-between align-items-center w-100 btn btn-danger">
-                                    <span class="sidebar_link__wrapper">
-                                        <i class="icon-home-line"></i>
-                                        <small class="d-none d-sm-inline fs-6">
-                                            Kabinetdan chiqish
-                                        </small>
-                                    </span>
-                                </button>
-                            </li>
-                        </ul>
-                        <hr />
-                        <div class="text-center pb-4 lead">
-                            App version: 1.0.0
+                            <ul class="custom_ul nav nav-pills w-100 flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start gap-2"
+                                id="menu">
+                                <li class="nav-item w-100">
+                                    <a href="./create-appeal.html"
+                                        class="px-2 d-flex justify-content-between align-items-center w-100 btn btn-primary">
+                                        <span class="sidebar_link__wrapper">
+                                            <i class="fa-solid fa-newspaper text-white"></i>
+                                            <small class="d-none d-sm-inline fs-6">
+                                                Ariza qoldirish
+                                            </small>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item w-100">
+                                    <a href="#"
+                                        class="nav-link px-2 d-flex justify-content-between align-items-center w-100">
+                                        <span class="sidebar_link__wrapper">
+                                            <i class="icon-file"></i>
+                                            <small class="d-none d-sm-inline"> Arizalarim </small>
+                                        </span>
+                                        <span class="badge">10</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item w-100">
+                                    <a href="#bildirishnoma"
+                                        class="nav-link px-2 d-flex justify-content-between align-items-center w-100"
+                                        data-bs-toggle="collapse">
+                                        <span class="sidebar_link__wrapper">
+                                            <i class="icon-notification-box"></i>
+                                            <small class="d-none d-sm-inline">
+                                                Bildirishnomalar
+                                            </small>
+                                        </span>
+                                        <!-- <span class="badge">5</span> -->
+                                    </a>
+                                    <!-- submenu -->
+                                    <!-- <ul class="collapse nav flex-column " id="bildirishnoma" data-bs-parent="#menu">
+                                        <li class="w-100">
+                                            <a href="#" class="nav-link px-0">
+                                                <span class="d-none d-sm-inline">Item</span>
+                                                1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-link px-0">
+                                                <span class="d-none d-sm-inline">Item</span>
+                                                2
+                                            </a>
+                                        </li>
+                                    </ul> -->
+                                </li>
+                                <li class="nav-item w-100">
+                                    <a href="#"
+                                        class="nav-link px-2 d-flex justify-content-between align-items-center w-100">
+                                        <span class="sidebar_link__wrapper">
+                                            <i class="icon-bar-chart"></i>
+                                            <small class="d-none d-sm-inline"> Menu </small>
+                                        </span>
+                                        <span class="badge">22</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item w-100">
+                                    <a href="#malumotlar"
+                                        class="nav-link px-2 d-flex justify-content-between align-items-center w-100"
+                                        data-bs-toggle="collapse">
+                                        <span class="sidebar_link__wrapper">
+                                            <i class="icon-investigation"></i>
+                                            <small class="d-none d-sm-inline"> Ma'lumotlar </small>
+                                        </span>
+                                    </a>
+                                    <ul class="collapse nav flex-column" id="malumotlar" data-bs-parent="#menu">
+                                        <li class="w-100">
+                                            <a href="#" class="nav-link px-0">
+                                                <span class="d-none d-sm-inline">Item</span> 1</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <div class="line"></div>
+                                <li class="nav-item w-100">
+                                    <a href="./index.html"
+                                        class="px-2 d-flex justify-content-between align-items-center w-100 btn btn-danger">
+                                        <span class="sidebar_link__wrapper">
+                                            <i class="fa-solid fa-right-from-bracket text-white"></i>
+                                            <small class="d-none d-sm-inline fs-6 text-white fw-normal">
+                                                Kabinetdan chiqish
+                                            </small>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <hr />
+                            <div class="text-center pb-4">App version: <b>1.0.0</b> </div>
                         </div>
                     </div>
                 </div>
-                <div class="left_sidebar col">
-                    <div class="left_sidebar__wrapper">
-                        <div class="left_sidebar__header">
-                            <div class="left_sidebar__header_top">
-                                <div class="left_sidebar__appeals">
-                                    <h4>Murojaatlarim</h4>
-                                    <p>Jami murojaatlar: <span>15 ta</span></p>
-                                </div>
-                            </div>
-                            <div class="left_sidebar__header_middle">
-                                <div class="left_sidebar__filter_wrapper">
-
-                                    <!-- box 1 -->
-                                    <div class="left_sidebar__filter_box">
-                                        <span>All time</span>
-                                        <i class="icon-x-close"></i>
-                                    </div>
-
-                                    <!-- box 2 -->
-                                    <div class="left_sidebar__filter_box">
-                                        <span>US, AU, +4</span>
-                                        <i class="icon-x-close"></i>
-                                    </div>
-
-                                    <!-- box 3 -->
-                                    <div class="left_sidebar__filter_box">
-                                        <i class="icon-filter-lines"></i>
-                                        <span>More filters</span>
-                                    </div>
-                                </div>
-                                <div class="form-group d-flex">
-                                    <span class="input-group-text" id="qidirish">
-                                        <i class="icon-search"></i>
-                                    </span>
-                                    <input type="text" class="form-control" placeholder="Qidirish" aria-label="Qidirish"
-                                        aria-describedby="qidirish" />
+                <div class="right_sidebar col">
+                    <div class="right_sidebar__content">
+                        <div class="right_sidebar__header">
+                            <div class="right_sidebar__header_top">
+                                <div class="right_sidebar__appeals">
+                                    <h4>Murojaatlarim <span>(15 ta)</span></h4>
                                 </div>
                             </div>
                         </div>
-                        <div class="left_sidebar__body">
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                                        aria-selected="true">Barchasi <span class="badge">57</span></button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-profile" type="button" role="tab"
-                                        aria-controls="pills-profile" aria-selected="false">Profile</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-contact" type="button" role="tab"
-                                        aria-controls="pills-contact" aria-selected="false">Contact</button>
-                                </li>
-                            </ul>
+                        <div class="right_sidebar__body">
+                            <div class="d-flex align-items-start justify-content-between">
+                                <ul class="nav nav-pills mb-3 gap-1" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-all" type="button" role="tab"
+                                            aria-controls="pills-all" aria-selected="true">
+                                            Barchasi <span class="badge">57</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-pending-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-pending" type="button" role="tab"
+                                            aria-controls="pills-pending" aria-selected="false">
+                                            Ko'rib chiqilmoqda <span class="badge">7</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-done-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-done" type="button" role="tab"
+                                            aria-controls="pills-done" aria-selected="false">
+                                            Hal qilingan <span class="badge">5</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-reject-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-reject" type="button" role="tab"
+                                            aria-controls="pills-reject" aria-selected="false">
+                                            Rad etilgan <span class="badge">2</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                                <div class="right_sidebar__body_middle">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Term" aria-label="Qidirish"
+                                            aria-describedby="qidirish" />
+                                        <span class="input-group-text" id="qidirish">
+                                            <i class="icon-search"></i>
+                                        </span>
+                                    </div>
+                                    <div class="right_sidebar__filter_wrapper">
+                                        <!-- box 3 -->
+                                        <div class="right_sidebar__filter_box" data-bs-toggle="offcanvas"
+                                            data-bs-target="#offcanvasMoreFilter" aria-controls="offcanvasMoreFilter">
+                                            <i class="icon-filter-lines"></i>
+                                            <span>Advanced filter</span>
+                                        </div>
+                                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMoreFilter"
+                                            aria-labelledby="offcanvasMoreFilterLabel">
+                                            <div class="offcanvas-header">
+                                                <h5 id="offcanvasMoreFilterLabel">Filter</h5>
+                                                <i class="icon-cancel-circle" data-bs-dismiss="offcanvas"></i>
+                                            </div>
+                                            <hr />
+                                            <div class="offcanvas-body">
+                                                <form class="filter_form">
+                                                    <div class="inputs_wrapper">
+                                                        <div class="input-group">
+                                                            <span class="input-group-text" id="filter_qidirish">
+                                                                <i class="icon-search"></i>
+                                                            </span>
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Qidirish" aria-label="Qidirish"
+                                                                aria-describedby="filter_qidirish" />
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <label for="appeal_direction" class="form-label">Murojaat
+                                                                yo'nalishi</label>
+                                                            <select class="form-select"
+                                                                aria-label="Murojaat yo'nalishini tanlang"
+                                                                id="appeal_direction">
+                                                                <option selected>
+                                                                    Murojaat yo'nalishini tanlang
+                                                                </option>
+                                                                <option value="1">Kommunal soha</option>
+                                                                <option value="2">Transport</option>
+                                                                <option value="3">Savdo sohasi</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <label for="appeal_category" class="form-label">Murojaat
+                                                                kategoriyasi</label>
+                                                            <select class="form-select"
+                                                                aria-label="Murojaat kategoriyasini tanlang"
+                                                                id="appeal_category">
+                                                                <option selected>
+                                                                    Murojaat kategoriyasini tanlang
+                                                                </option>
+                                                                <option value="1">Issiq va sovuq suv</option>
+                                                                <option value="2">Issiq va sovuq suv</option>
+                                                                <option value="3">Issiq va sovuq suv</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <label for="status" class="form-label">Status</label>
+                                                            <select class="form-select" aria-label="Status" id="status">
+                                                                <option selected>Statusni tanlang</option>
+                                                                <option value="1">Active</option>
+                                                                <option value="2">Passive</option>
+                                                                <option value="3">Paid</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <label for="datepicker" class="form-label">Sanalari
+                                                                oralig'i</label>
+                                                            <div class="d-flex gap-3">
+                                                                <input type="date" id="datepicker"
+                                                                    class="form-control col" />
+                                                                <input type="date" id="datepicker"
+                                                                    class="form-control col" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="filter_buttons">
+                                                        <button type="submit" class="btn btn-outline-danger">
+                                                            Bekor qilish
+                                                        </button>
+                                                        <button type="submit" class="btn btn-primary">
+                                                            Saqlash
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="tab-content" id="pills-tabContent">
-                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                                    aria-labelledby="pills-home-tab">...</div>
-                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                                    aria-labelledby="pills-profile-tab">...</div>
-                                <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                                    aria-labelledby="pills-contact-tab">...</div>
+                                <div class="tab-pane fade show active" id="pills-all" role="tabpanel"
+                                    aria-labelledby="pills-all-tab">
+                                    <div class="appeals_list">
+                                        <!-- box-1 -->
+                                        <div class="appeal_box">
+                                            <div class="appeal_box__top">
+                                                <div class="appeal_column first">
+                                                    <small>ID:</small>
+                                                    <span class="appeal_badge appeal_id">1575435345</span>
+                                                </div>
+                                                <div class="appeal_column second">
+                                                    <small>Murojaat yo'nalishi:</small>
+                                                    <h5>Kommunal soha</h5>
+                                                </div>
+                                                <div class="appeal_column third">
+                                                    <small>Murojaat kategoriyasi:</small>
+                                                    <h5>Issiq va sovuq suv</h5>
+                                                </div>
+                                                <div class="appeal_column fourth">
+                                                    <small>Status:</small>
+                                                    <span class="appeal_badge appeal_status">Ko'rib chiqilmoqda</span>
+                                                </div>
+                                                <div class="appeal_column fifth">
+                                                    <small>Status yangilangan sana:</small>
+                                                    <h5>10/11/2024 - 16:52</h5>
+                                                </div>
+                                                <div class="appeal__icons">
+                                                    <i class="icon-chatting"></i>
+                                                    <a data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                                        aria-expanded="false" aria-controls="collapseExample">
+                                                        <i class="icon-chevron-down1"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="collapse" id="collapseExample">
+                                                <div class="appeal_collapse">
+                                                    <div class="appeal_box__top">
+                                                        <div class="appeal_column">
+                                                            <small>E'tiroz qaratilgan subyekt:</small>
+                                                            <h5>Angeles Food MCHJ</h5>
+                                                        </div>
+                                                        <div class="appeal_column">
+                                                            <small>Murojaat yaratilgan sana:</small>
+                                                            <h5>10/11/2024 - 17:45</h5>
+                                                        </div>
+                                                        <div class="appeal_column">
+                                                            <small>Ko'rib chiqish muddati:</small>
+                                                            <span class="appeal_badge">15 ish kuni</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="appeal_column">
+                                                        <small>Murojaat turi:</small>
+                                                        <p>
+                                                            Xususiy va davlat pullik xizmat ko'rsatish sport
+                                                            hamda sog'lomlashtirish muassasalari
+                                                            ko'rsatiladigan xizmatning iste'molchi sog'ligi
+                                                            va alomatligiga ta'siri haqida so'ralganida
+                                                            lozim darajada tushuntirmaslik yoki ma'lumot
+                                                            berilmasligi
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- box-2 -->
+                                        <div class="appeal_box">
+                                            <div class="appeal_box__top">
+                                                <div class="appeal_column first">
+                                                    <small>ID:</small>
+                                                    <span class="appeal_badge appeal_id">1575435345</span>
+                                                </div>
+                                                <div class="appeal_column second">
+                                                    <small>Murojaat yo'nalishi:</small>
+                                                    <h5>Kommunal soha</h5>
+                                                </div>
+                                                <div class="appeal_column third">
+                                                    <small>Murojaat kategoriyasi:</small>
+                                                    <h5>Issiq va sovuq suv</h5>
+                                                </div>
+                                                <div class="appeal_column fourth">
+                                                    <small>Status:</small>
+                                                    <span class="appeal_badge appeal_status">Ko'rib chiqilmoqda</span>
+                                                </div>
+                                                <div class="appeal_column fifth">
+                                                    <small>Status yangilangan sana:</small>
+                                                    <h5>10/11/2024 - 16:52</h5>
+                                                </div>
+                                                <div class="appeal__icons">
+                                                    <i class="icon-chatting"></i>
+                                                    <a data-bs-toggle="collapse" href="#collapse2" role="button"
+                                                        aria-expanded="false" aria-controls="collapse2">
+                                                        <i class="icon-chevron-down1"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="collapse" id="collapse2">
+                                                <div class="appeal_collapse">
+                                                    <div class="appeal_box__top">
+                                                        <div class="appeal_column">
+                                                            <small>E'tiroz qaratilgan subyekt:</small>
+                                                            <h5>Angeles Food MCHJ</h5>
+                                                        </div>
+                                                        <div class="appeal_column">
+                                                            <small>Murojaat yaratilgan sana:</small>
+                                                            <h5>10/11/2024 - 17:45</h5>
+                                                        </div>
+                                                        <div class="appeal_column">
+                                                            <small>Ko'rib chiqish muddati:</small>
+                                                            <span class="appeal_badge">15 ish kuni</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="appeal_column">
+                                                        <small>Murojaat turi:</small>
+                                                        <p>
+                                                            Xususiy va davlat pullik xizmat ko'rsatish sport
+                                                            hamda sog'lomlashtirish muassasalari
+                                                            ko'rsatiladigan xizmatning iste'molchi sog'ligi
+                                                            va alomatligiga ta'siri haqida so'ralganida
+                                                            lozim darajada tushuntirmaslik yoki ma'lumot
+                                                            berilmasligi
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- box-3 -->
+                                        <div class="appeal_box">
+                                            <div class="appeal_box__top">
+                                                <div class="appeal_column first">
+                                                    <small>ID:</small>
+                                                    <span class="appeal_badge appeal_id">1575435345</span>
+                                                </div>
+                                                <div class="appeal_column second">
+                                                    <small>Murojaat yo'nalishi:</small>
+                                                    <h5>Kommunal soha</h5>
+                                                </div>
+                                                <div class="appeal_column third">
+                                                    <small>Murojaat kategoriyasi:</small>
+                                                    <h5>Issiq va sovuq suv</h5>
+                                                </div>
+                                                <div class="appeal_column fourth">
+                                                    <small>Status:</small>
+                                                    <span class="appeal_badge appeal_status">Ko'rib chiqilmoqda</span>
+                                                </div>
+                                                <div class="appeal_column fifth">
+                                                    <small>Status yangilangan sana:</small>
+                                                    <h5>10/11/2024 - 16:52</h5>
+                                                </div>
+                                                <div class="appeal__icons">
+                                                    <i class="icon-chatting"></i>
+                                                    <a data-bs-toggle="collapse" href="#collapse3" role="button"
+                                                        aria-expanded="false" aria-controls="collapse3">
+                                                        <i class="icon-chevron-down1"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="collapse" id="collapse3">
+                                                <div class="appeal_collapse">
+                                                    <div class="appeal_box__top">
+                                                        <div class="appeal_column">
+                                                            <small>E'tiroz qaratilgan subyekt:</small>
+                                                            <h5>Angeles Food MCHJ</h5>
+                                                        </div>
+                                                        <div class="appeal_column">
+                                                            <small>Murojaat yaratilgan sana:</small>
+                                                            <h5>10/11/2024 - 17:45</h5>
+                                                        </div>
+                                                        <div class="appeal_column">
+                                                            <small>Ko'rib chiqish muddati:</small>
+                                                            <span class="appeal_badge">15 ish kuni</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="appeal_column">
+                                                        <small>Murojaat turi:</small>
+                                                        <p>
+                                                            Xususiy va davlat pullik xizmat ko'rsatish sport
+                                                            hamda sog'lomlashtirish muassasalari
+                                                            ko'rsatiladigan xizmatning iste'molchi sog'ligi
+                                                            va alomatligiga ta'siri haqida so'ralganida
+                                                            lozim darajada tushuntirmaslik yoki ma'lumot
+                                                            berilmasligi
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- box-4 -->
+                                        <div class="appeal_box">
+                                            <div class="appeal_box__top">
+                                                <div class="appeal_column first">
+                                                    <small>ID:</small>
+                                                    <span class="appeal_badge appeal_id">1575435345</span>
+                                                </div>
+                                                <div class="appeal_column second">
+                                                    <small>Murojaat yo'nalishi:</small>
+                                                    <h5>Kommunal soha</h5>
+                                                </div>
+                                                <div class="appeal_column third">
+                                                    <small>Murojaat kategoriyasi:</small>
+                                                    <h5>Issiq va sovuq suv</h5>
+                                                </div>
+                                                <div class="appeal_column fourth">
+                                                    <small>Status:</small>
+                                                    <span class="appeal_badge appeal_status">Ko'rib chiqilmoqda</span>
+                                                </div>
+                                                <div class="appeal_column fifth">
+                                                    <small>Status yangilangan sana:</small>
+                                                    <h5>10/11/2024 - 16:52</h5>
+                                                </div>
+                                                <div class="appeal__icons">
+                                                    <i class="icon-chatting"></i>
+                                                    <a data-bs-toggle="collapse" href="#collapse4" role="button"
+                                                        aria-expanded="false" aria-controls="collapse4">
+                                                        <i class="icon-chevron-down1"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="collapse" id="collapse4">
+                                                <div class="appeal_collapse">
+                                                    <div class="appeal_box__top">
+                                                        <div class="appeal_column">
+                                                            <small>E'tiroz qaratilgan subyekt:</small>
+                                                            <h5>Angeles Food MCHJ</h5>
+                                                        </div>
+                                                        <div class="appeal_column">
+                                                            <small>Murojaat yaratilgan sana:</small>
+                                                            <h5>10/11/2024 - 17:45</h5>
+                                                        </div>
+                                                        <div class="appeal_column">
+                                                            <small>Ko'rib chiqish muddati:</small>
+                                                            <span class="appeal_badge">15 ish kuni</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="appeal_column">
+                                                        <small>Murojaat turi:</small>
+                                                        <p>
+                                                            Xususiy va davlat pullik xizmat ko'rsatish sport
+                                                            hamda sog'lomlashtirish muassasalari
+                                                            ko'rsatiladigan xizmatning iste'molchi sog'ligi
+                                                            va alomatligiga ta'siri haqida so'ralganida
+                                                            lozim darajada tushuntirmaslik yoki ma'lumot
+                                                            berilmasligi
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- box-5 -->
+                                        <div class="appeal_box">
+                                            <div class="appeal_box__top">
+                                                <div class="appeal_column first">
+                                                    <small>ID:</small>
+                                                    <span class="appeal_badge appeal_id">1575435345</span>
+                                                </div>
+                                                <div class="appeal_column second">
+                                                    <small>Murojaat yo'nalishi:</small>
+                                                    <h5>Kommunal soha</h5>
+                                                </div>
+                                                <div class="appeal_column third">
+                                                    <small>Murojaat kategoriyasi:</small>
+                                                    <h5>Issiq va sovuq suv</h5>
+                                                </div>
+                                                <div class="appeal_column fourth">
+                                                    <small>Status:</small>
+                                                    <span class="appeal_badge appeal_status">Ko'rib chiqilmoqda</span>
+                                                </div>
+                                                <div class="appeal_column fifth">
+                                                    <small>Status yangilangan sana:</small>
+                                                    <h5>10/11/2024 - 16:52</h5>
+                                                </div>
+                                                <div class="appeal__icons">
+                                                    <i class="icon-chatting"></i>
+                                                    <a data-bs-toggle="collapse" href="#collapse5" role="button"
+                                                        aria-expanded="false" aria-controls="collapse5">
+                                                        <i class="icon-chevron-down1"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="collapse" id="collapse5">
+                                                <div class="appeal_collapse">
+                                                    <div class="appeal_box__top">
+                                                        <div class="appeal_column">
+                                                            <small>E'tiroz qaratilgan subyekt:</small>
+                                                            <h5>Angeles Food MCHJ</h5>
+                                                        </div>
+                                                        <div class="appeal_column">
+                                                            <small>Murojaat yaratilgan sana:</small>
+                                                            <h5>10/11/2024 - 17:45</h5>
+                                                        </div>
+                                                        <div class="appeal_column">
+                                                            <small>Ko'rib chiqish muddati:</small>
+                                                            <span class="appeal_badge">15 ish kuni</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="appeal_column">
+                                                        <small>Murojaat turi:</small>
+                                                        <p>
+                                                            Xususiy va davlat pullik xizmat ko'rsatish sport
+                                                            hamda sog'lomlashtirish muassasalari
+                                                            ko'rsatiladigan xizmatning iste'molchi sog'ligi
+                                                            va alomatligiga ta'siri haqida so'ralganida
+                                                            lozim darajada tushuntirmaslik yoki ma'lumot
+                                                            berilmasligi
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- box-6 -->
+                                        <div class="appeal_box">
+                                            <div class="appeal_box__top">
+                                                <div class="appeal_column first">
+                                                    <small>ID:</small>
+                                                    <span class="appeal_badge appeal_id">1575435345</span>
+                                                </div>
+                                                <div class="appeal_column second">
+                                                    <small>Murojaat yo'nalishi:</small>
+                                                    <h5>Kommunal soha</h5>
+                                                </div>
+                                                <div class="appeal_column third">
+                                                    <small>Murojaat kategoriyasi:</small>
+                                                    <h5>Issiq va sovuq suv</h5>
+                                                </div>
+                                                <div class="appeal_column fourth">
+                                                    <small>Status:</small>
+                                                    <span class="appeal_badge appeal_status">Ko'rib chiqilmoqda</span>
+                                                </div>
+                                                <div class="appeal_column fifth">
+                                                    <small>Status yangilangan sana:</small>
+                                                    <h5>10/11/2024 - 16:52</h5>
+                                                </div>
+                                                <div class="appeal__icons">
+                                                    <i class="icon-chatting"></i>
+                                                    <a data-bs-toggle="collapse" href="#collapse6" role="button"
+                                                        aria-expanded="false" aria-controls="collapse6">
+                                                        <i class="icon-chevron-down1"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="collapse" id="collapse6">
+                                                <div class="appeal_collapse">
+                                                    <div class="appeal_box__top">
+                                                        <div class="appeal_column">
+                                                            <small>E'tiroz qaratilgan subyekt:</small>
+                                                            <h5>Angeles Food MCHJ</h5>
+                                                        </div>
+                                                        <div class="appeal_column">
+                                                            <small>Murojaat yaratilgan sana:</small>
+                                                            <h5>10/11/2024 - 17:45</h5>
+                                                        </div>
+                                                        <div class="appeal_column">
+                                                            <small>Ko'rib chiqish muddati:</small>
+                                                            <span class="appeal_badge">15 ish kuni</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="appeal_column">
+                                                        <small>Murojaat turi:</small>
+                                                        <p>
+                                                            Xususiy va davlat pullik xizmat ko'rsatish sport
+                                                            hamda sog'lomlashtirish muassasalari
+                                                            ko'rsatiladigan xizmatning iste'molchi sog'ligi
+                                                            va alomatligiga ta'siri haqida so'ralganida
+                                                            lozim darajada tushuntirmaslik yoki ma'lumot
+                                                            berilmasligi
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- box-7 -->
+                                        <div class="appeal_box">
+                                            <div class="appeal_box__top">
+                                                <div class="appeal_column first">
+                                                    <small>ID:</small>
+                                                    <span class="appeal_badge appeal_id">1575435345</span>
+                                                </div>
+                                                <div class="appeal_column second">
+                                                    <small>Murojaat yo'nalishi:</small>
+                                                    <h5>Kommunal soha</h5>
+                                                </div>
+                                                <div class="appeal_column third">
+                                                    <small>Murojaat kategoriyasi:</small>
+                                                    <h5>Issiq va sovuq suv</h5>
+                                                </div>
+                                                <div class="appeal_column fourth">
+                                                    <small>Status:</small>
+                                                    <span class="appeal_badge appeal_status">Ko'rib chiqilmoqda</span>
+                                                </div>
+                                                <div class="appeal_column fifth">
+                                                    <small>Status yangilangan sana:</small>
+                                                    <h5>10/11/2024 - 16:52</h5>
+                                                </div>
+                                                <div class="appeal__icons">
+                                                    <i class="icon-chatting"></i>
+                                                    <a data-bs-toggle="collapse" href="#collapse7" role="button"
+                                                        aria-expanded="false" aria-controls="collapse7">
+                                                        <i class="icon-chevron-down1"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="collapse" id="collapse7">
+                                                <div class="appeal_collapse">
+                                                    <div class="appeal_box__top">
+                                                        <div class="appeal_column">
+                                                            <small>E'tiroz qaratilgan subyekt:</small>
+                                                            <h5>Angeles Food MCHJ</h5>
+                                                        </div>
+                                                        <div class="appeal_column">
+                                                            <small>Murojaat yaratilgan sana:</small>
+                                                            <h5>10/11/2024 - 17:45</h5>
+                                                        </div>
+                                                        <div class="appeal_column">
+                                                            <small>Ko'rib chiqish muddati:</small>
+                                                            <span class="appeal_badge">15 ish kuni</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="appeal_column">
+                                                        <small>Murojaat turi:</small>
+                                                        <p>
+                                                            Xususiy va davlat pullik xizmat ko'rsatish sport
+                                                            hamda sog'lomlashtirish muassasalari
+                                                            ko'rsatiladigan xizmatning iste'molchi sog'ligi
+                                                            va alomatligiga ta'siri haqida so'ralganida
+                                                            lozim darajada tushuntirmaslik yoki ma'lumot
+                                                            berilmasligi
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- box-8 -->
+                                        <div class="appeal_box">
+                                            <div class="appeal_box__top">
+                                                <div class="appeal_column first">
+                                                    <small>ID:</small>
+                                                    <span class="appeal_badge appeal_id">1575435345</span>
+                                                </div>
+                                                <div class="appeal_column second">
+                                                    <small>Murojaat yo'nalishi:</small>
+                                                    <h5>Kommunal soha</h5>
+                                                </div>
+                                                <div class="appeal_column third">
+                                                    <small>Murojaat kategoriyasi:</small>
+                                                    <h5>Issiq va sovuq suv</h5>
+                                                </div>
+                                                <div class="appeal_column fourth">
+                                                    <small>Status:</small>
+                                                    <span class="appeal_badge appeal_status">Ko'rib chiqilmoqda</span>
+                                                </div>
+                                                <div class="appeal_column fifth">
+                                                    <small>Status yangilangan sana:</small>
+                                                    <h5>10/11/2024 - 16:52</h5>
+                                                </div>
+                                                <div class="appeal__icons">
+                                                    <i class="icon-chatting"></i>
+                                                    <a data-bs-toggle="collapse" href="#collapse8" role="button"
+                                                        aria-expanded="false" aria-controls="collapse8">
+                                                        <i class="icon-chevron-down1"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="collapse" id="collapse8">
+                                                <div class="appeal_collapse">
+                                                    <div class="appeal_box__top">
+                                                        <div class="appeal_column">
+                                                            <small>E'tiroz qaratilgan subyekt:</small>
+                                                            <h5>Angeles Food MCHJ</h5>
+                                                        </div>
+                                                        <div class="appeal_column">
+                                                            <small>Murojaat yaratilgan sana:</small>
+                                                            <h5>10/11/2024 - 17:45</h5>
+                                                        </div>
+                                                        <div class="appeal_column">
+                                                            <small>Ko'rib chiqish muddati:</small>
+                                                            <span class="appeal_badge">15 ish kuni</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="appeal_column">
+                                                        <small>Murojaat turi:</small>
+                                                        <p>
+                                                            Xususiy va davlat pullik xizmat ko'rsatish sport
+                                                            hamda sog'lomlashtirish muassasalari
+                                                            ko'rsatiladigan xizmatning iste'molchi sog'ligi
+                                                            va alomatligiga ta'siri haqida so'ralganida
+                                                            lozim darajada tushuntirmaslik yoki ma'lumot
+                                                            berilmasligi
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- box-9 -->
+                                        <div class="appeal_box">
+                                            <div class="appeal_box__top">
+                                                <div class="appeal_column first">
+                                                    <small>ID:</small>
+                                                    <span class="appeal_badge appeal_id">1575435345</span>
+                                                </div>
+                                                <div class="appeal_column second">
+                                                    <small>Murojaat yo'nalishi:</small>
+                                                    <h5>Kommunal soha</h5>
+                                                </div>
+                                                <div class="appeal_column third">
+                                                    <small>Murojaat kategoriyasi:</small>
+                                                    <h5>Issiq va sovuq suv</h5>
+                                                </div>
+                                                <div class="appeal_column fourth">
+                                                    <small>Status:</small>
+                                                    <span class="appeal_badge appeal_status">Ko'rib chiqilmoqda</span>
+                                                </div>
+                                                <div class="appeal_column fifth">
+                                                    <small>Status yangilangan sana:</small>
+                                                    <h5>10/11/2024 - 16:52</h5>
+                                                </div>
+                                                <div class="appeal__icons">
+                                                    <i class="icon-chatting"></i>
+                                                    <a data-bs-toggle="collapse" href="#collapse9" role="button"
+                                                        aria-expanded="false" aria-controls="collapse9">
+                                                        <i class="icon-chevron-down1"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="collapse" id="collapse9">
+                                                <div class="appeal_collapse">
+                                                    <div class="appeal_box__top">
+                                                        <div class="appeal_column">
+                                                            <small>E'tiroz qaratilgan subyekt:</small>
+                                                            <h5>Angeles Food MCHJ</h5>
+                                                        </div>
+                                                        <div class="appeal_column">
+                                                            <small>Murojaat yaratilgan sana:</small>
+                                                            <h5>10/11/2024 - 17:45</h5>
+                                                        </div>
+                                                        <div class="appeal_column">
+                                                            <small>Ko'rib chiqish muddati:</small>
+                                                            <span class="appeal_badge">15 ish kuni</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="appeal_column">
+                                                        <small>Murojaat turi:</small>
+                                                        <p>
+                                                            Xususiy va davlat pullik xizmat ko'rsatish sport
+                                                            hamda sog'lomlashtirish muassasalari
+                                                            ko'rsatiladigan xizmatning iste'molchi sog'ligi
+                                                            va alomatligiga ta'siri haqida so'ralganida
+                                                            lozim darajada tushuntirmaslik yoki ma'lumot
+                                                            berilmasligi
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- box-10 -->
+                                        <div class="appeal_box">
+                                            <div class="appeal_box__top">
+                                                <div class="appeal_column first">
+                                                    <small>ID:</small>
+                                                    <span class="appeal_badge appeal_id">1575435345</span>
+                                                </div>
+                                                <div class="appeal_column second">
+                                                    <small>Murojaat yo'nalishi:</small>
+                                                    <h5>Kommunal soha</h5>
+                                                </div>
+                                                <div class="appeal_column third">
+                                                    <small>Murojaat kategoriyasi:</small>
+                                                    <h5>Issiq va sovuq suv</h5>
+                                                </div>
+                                                <div class="appeal_column fourth">
+                                                    <small>Status:</small>
+                                                    <span class="appeal_badge appeal_status">Ko'rib chiqilmoqda</span>
+                                                </div>
+                                                <div class="appeal_column fifth">
+                                                    <small>Status yangilangan sana:</small>
+                                                    <h5>10/11/2024 - 16:52</h5>
+                                                </div>
+                                                <div class="appeal__icons">
+                                                    <i class="icon-chatting"></i>
+                                                    <a data-bs-toggle="collapse" href="#collapse10" role="button"
+                                                        aria-expanded="false" aria-controls="collapse10">
+                                                        <i class="icon-chevron-down1"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="collapse" id="collapse10">
+                                                <div class="appeal_collapse">
+                                                    <div class="appeal_box__top">
+                                                        <div class="appeal_column">
+                                                            <small>E'tiroz qaratilgan subyekt:</small>
+                                                            <h5>Angeles Food MCHJ</h5>
+                                                        </div>
+                                                        <div class="appeal_column">
+                                                            <small>Murojaat yaratilgan sana:</small>
+                                                            <h5>10/11/2024 - 17:45</h5>
+                                                        </div>
+                                                        <div class="appeal_column">
+                                                            <small>Ko'rib chiqish muddati:</small>
+                                                            <span class="appeal_badge">15 ish kuni</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="appeal_column">
+                                                        <small>Murojaat turi:</small>
+                                                        <p>
+                                                            Xususiy va davlat pullik xizmat ko'rsatish sport
+                                                            hamda sog'lomlashtirish muassasalari
+                                                            ko'rsatiladigan xizmatning iste'molchi sog'ligi
+                                                            va alomatligiga ta'siri haqida so'ralganida
+                                                            lozim darajada tushuntirmaslik yoki ma'lumot
+                                                            berilmasligi
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-pending" role="tabpanel"
+                                    aria-labelledby="pills-pending-tab">
+                                    Ko'rib chiqilmoqda
+                                </div>
+                                <div class="tab-pane fade" id="pills-done" role="tabpanel"
+                                    aria-labelledby="pills-done-tab">
+                                    Hal qilingan
+                                </div>
+                                <div class="tab-pane fade" id="pills-reject" role="tabpanel"
+                                    aria-labelledby="pills-reject-tab">
+                                    Rad etilgan
+                                </div>
                             </div>
                         </div>
                     </div>

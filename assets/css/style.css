@@ -9,6 +9,7 @@
 @import "./company-appeals.css";
 @import "./appeals-list.css";
 @import "./cabinet.css";
+@import "./create-appeal.css";
 
 :root {
   --main-text-color: #535862;
