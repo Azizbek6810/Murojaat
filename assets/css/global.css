@@ -1,17 +1,8 @@
 @import url("./variables.css");
 @import url("../fonts/fonts.css");
 @import url("./highchart.css");
-@import url("./category-details.css");
-@import url("./login.css");
-@import url("./verification.css");
-@import url("./registration.css");
-@import url("./companies-list.css");
-@import url("./company-appeals.css");
-@import url("./appeals-list.css");
-@import url("./cabinet-create-appeal.css");
-@import url("./cabinet-not-found.css");
-@import url("./cabinet-confirm-appeal.css");
-@import url("./not-found.css");
+@import url("../icomoon/style.css");
+
 
 * {
   padding: 0;

@@ -92,6 +92,11 @@
     background: var(--white);
 }
 
+.appeals_list__overflow{
+    height: 80vh;
+    overflow: auto;
+}
+
 .appeals_list {
     display: flex;
     flex-direction: column;

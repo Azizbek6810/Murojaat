@@ -1,11 +1,11 @@
-.section-not-found {
+.section-access-denied {
     min-height: calc(100vh - 90.77px - 16px - 354.438px);
     padding: 10px 0;
     max-width: 540px;
     margin: 0 auto;
 }
 
-.not_found {
+.access_denied {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,7 +16,7 @@
     text-align: center;
 }
 
-.not_found h3 {
+.access_denied h3 {
     color: var(--title-text-color);
     font-size: 24px;
     font-weight: 600;
@@ -25,7 +25,7 @@
     text-align: center;
 }
 
-.not_found p {
+.access_denied p {
     color: var(--main-text-color);
     font-size: 16px;
     font-weight: 400;
