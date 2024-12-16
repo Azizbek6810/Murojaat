@@ -1,16 +1,4 @@
-:root {
-    --main-text-color: #535862;
-    --color-gray-600: #475467;
-    --color-inky: #7f56d9;
-    --title-text-color: #1d2939;
-    --greenDark-color: #027a48;
-    --greenLight-color: #6ce9a6;
-    --blurLight-color: #026aa2;
-    --gray-50: #f9fafb;
-    --gray-100: #e4e7ec;
-    --blue-600: #1570ef;
-    --white: #fff;
-}
+
 
 /* SECTION CATEGORY DETAILS STYLE */
 
@@ -51,7 +39,7 @@ h1 {
     display: flex;
     align-items: flex-start;
     padding: 20px;
-    border: 1px solid #e9eaeb;
+    border: 1px solid var(--gray-200);
     border-radius: 12px;
     flex: 0 0 calc(25% - 20px);
     cursor: pointer;
@@ -111,7 +99,7 @@ h1 {
 }
 
 .appeals-list__totalText {
-    color: #667085;
+    color: var(--gray-350);
 }
 
 .appeals-list_searchInput__filterBtn {
@@ -151,7 +139,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     gap: 12px;
-    border-top: 1px solid rgb(208, 213, 221);
+    border-top: 1px solid var(--gray-150);
     border-top-width: 100%;
     padding: 24px 0;
 }
@@ -177,7 +165,7 @@ h1 {
     gap: 8px;
     padding: 10px 14px;
     box-sizing: border-box;
-    border: 1px solid rgb(213, 215, 218);
+    border: 1px solid var(--gray-250);
     border-radius: 8px;
     width: max-content;
     cursor: pointer;

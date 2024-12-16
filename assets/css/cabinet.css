@@ -1,125 +1,5 @@
-:root {
-    --main-text-color: #535862;
-    --color-gray-600: #475467;
-    --color-inky: #7f56d9;
-    --title-text-color: #1d2939;
-    --greenDark-color: #027a48;
-    --greenLight-color: #6ce9a6;
-    --blurLight-color: #026aa2;
-    --gray-50: #f9fafb;
-    --gray-100: #e4e7ec;
-    --blue-600: #1570ef;
-    --white: #fff;
-}
 
-.section-cabinet .cabinet_logo__link {
-    width: auto;
-    height: auto;
-    display: inline-block;
-}
-
-.section-cabinet img[alt="logo"] {
-    width: 200px;
-    object-fit: contain;
-    scale: 1;
-}
-
-.cabinet_customer {
-    display: flex;
-    flex-direction: column;
-    padding: 12px;
-    border: 1px solid rgb(233, 234, 235);
-    border-radius: 12px;
-    width: 100%;
-    cursor: pointer;
-    transition: box-shadow 0.3s linear;
-    gap: 5px;
-}
-
-.cabinet_customer:hover {
-    box-shadow: 0px 2px 4px 0px rgba(10, 13, 18, 0.075);
-}
-
-.cabinet_customer:hover>span {
-    color: var(--blurLight-color);
-}
-
-.cabinet_customer span {
-    color: var(--title-text-color);
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: 0%;
-    text-align: left;
-}
-
-.cabinet_customer>small {
-    display: flex;
-    align-items: center;
-    font-weight: 400;
-    width: fit-content;
-}
-
-.custom_ul a.nav-link {
-    transition: all 0.3s linear;
-}
-
-.custom_ul a.nav-link small {
-    color: #414651;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-}
-
-.custom_ul a.nav-link i {
-    color: #717680;
-    font-size: 20px;
-}
-
-.custom_ul a.nav-link .sidebar_link__wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-}
-
-.badge {
-    color: var(--title-text-color);
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 18px;
-    letter-spacing: 0%;
-    text-align: center;
-    border: 1px solid #e9eaeb;
-    border-radius: 12px;
-    background: #fafafa;
-    padding: 2px 8px;
-}
-
-.custom_ul a.nav-link:hover {
-    background-color: var(--blue-600);
-}
-
-.custom_ul a.nav-link:hover i,
-.custom_ul a.nav-link:hover small {
-    color: var(--white);
-}
-
-.custom_ul .line {
-    width: 100%;
-    height: 2px;
-    background-color: #dddddd;
-    opacity: 0.6;
-    margin: 10px 0;
-}
-
-/* LEFT SIDEBAR */
-
-.left_sidebar .fixed {
-    left: 0;
-    top: 0;
-    position: sticky;
-}
+/* RIGHT SIDEBAR STYLE */
 
 .right_sidebar {
     padding: 32px;
@@ -143,10 +23,6 @@
     display: flex;
     align-items: center;
     gap: 10px;
-}
-
-.input-group {
-    width: fit-content;
 }
 
 .right_sidebar__appeals h4 {
@@ -184,11 +60,11 @@
     justify-content: center;
     gap: 6px;
     padding: 10px 14px;
-    border: 1px solid #d5d7da;
+    border: 1px solid var(--gray-250);
     border-radius: 8px;
     cursor: pointer;
     transition: box-shadow 0.3s linear;
-
+   width: max-content;
 }
 
 .right_sidebar__filter_box:hover {
@@ -201,7 +77,7 @@
 
 .right_sidebar__filter_box i {
     font-size: 20px;
-    color: #414651;
+    color: var(--gray-400);
 }
 
 .right_sidebar__filter_box i:hover {
@@ -209,7 +85,7 @@
 }
 
 .right_sidebar__filter_box span {
-    color: #414651;
+    color: var(--gray-400);
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;
@@ -219,9 +95,9 @@
 .right_sidebar__body .nav-pills .nav-link {
     background-color: transparent;
     border: 2px solid var(--gray-100);
-    background: rgb(250, 250, 250);
+    background: var(--white-100);
     border-radius: 6px;
-    color: #717680;
+    color: var(--gray-360);
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;
@@ -242,7 +118,7 @@
 
 .appeal_box {
     padding: 24px;
-    border: 1px solid #e4e7ec;
+    border: 1px solid var(--gray-100);
     border-radius: 20px;
     background: #f9fafb;
     transition: box-shadow 0.3s linear, border 0.3s linear;
@@ -286,8 +162,8 @@
 
 .appeal_badge {
     border-radius: 15px;
-    border: 1px solid #e9eaeb;
-    background: #fafafa;
+    border: 1px solid var(--gray-200);
+    background: var(--white-100);
     padding: 4px 12px;
     width: fit-content;
 }
@@ -320,8 +196,8 @@
 .appeal__icons i {
     font-size: 20px;
     line-height: 20px;
-    color: #98A2B3;
-    border: 1px solid #98A2B3;
+    color: var(--gray-300);
+    border: 1px solid var(--gray-300);
     border-radius: 50%;
     padding: 10px;
     cursor: pointer;
@@ -350,7 +226,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    border-top: 1px solid #D5D7DA;
+    border-top: 1px solid var(--gray-250);
     margin-top: 20px;
     padding-top: 16px;
 }

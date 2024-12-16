@@ -1,0 +1,21 @@
+:root {
+    --main-text-color: #535862;
+    --color-gray-600: #475467;
+    --color-inky: #7f56d9;
+    --title-text-color: #1d2939;
+    --greenDark-color: #027a48;
+    --greenLight-color: #6ce9a6;
+    --blurLight-color: #026aa2;
+    --gray-50: #f9fafb;
+    --gray-100: #e4e7ec;
+    --gray-150: #d0d5dd;
+    --gray-200: #e9eaeb;
+    --gray-250: #d5d7da;
+    --gray-300: #98A2B3;
+    --gray-350: #667085;
+    --gray-360: #717680;
+    --gray-400: #414651;
+    --blue-600: #1570ef;
+    --white: #fff;
+    --white-100: #fafafa;
+}

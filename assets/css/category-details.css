@@ -1,16 +1,4 @@
-:root {
-    --main-text-color: #535862;
-    --color-gray-600: #475467;
-    --color-inky: #7f56d9;
-    --title-text-color: #1d2939;
-    --greenDark-color: #027a48;
-    --greenLight-color: #6ce9a6;
-    --blurLight-color: #026aa2;
-    --gray-50: #f9fafb;
-    --gray-100: #e4e7ec;
-    --blue-600: #1570ef;
-    --white: #fff;
-}
+
 
 /* SECTION CATEGORY DETAILS STYLE */
 
@@ -52,7 +40,7 @@
 .category_title i {
     font-size: 24px;
     line-height: 24px;
-    color: #fff;
+    color: var(--white);
 }
 
 .category_detail__filterWrapper {
@@ -74,7 +62,7 @@
 }
 
 .category__totalText {
-    color: #667085;
+    color: var(--gray-350);
 }
 
 .category_searchInput__filterBtn {
@@ -115,7 +103,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 12px;
-    border-top: 1px solid rgb(208, 213, 221);
+    border-top: 1px solid var(--gray-150);
     border-top-width: 100%;
     padding: 24px 0;
 }
@@ -141,7 +129,7 @@
     gap: 8px;
     padding: 10px 14px;
     box-sizing: border-box;
-    border: 1px solid rgb(213, 215, 218);
+    border: 1px solid var(--gray-250);
     border-radius: 8px;
     width: max-content;
     cursor: pointer;

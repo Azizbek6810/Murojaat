@@ -46,12 +46,11 @@
 }
 
 #uzb_map {
-    height: 400px;
+  height: 400px;
 }
 
 .loading {
-    margin-top: 10em;
-    text-align: center;
-    color: gray;
+  margin-top: 10em;
+  text-align: center;
+  color: gray;
 }
-

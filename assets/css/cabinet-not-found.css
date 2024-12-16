@@ -1,0 +1,40 @@
+
+
+.cabinet_not_found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 490px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.cabinet_not_found h3 {
+    color: var(--title-text-color);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.cabinet_not_found p {
+    color: var(--main-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.right_sidebar__header_middle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right_sidebar__header_middle .input-group{
+    width: fit-content;
+}

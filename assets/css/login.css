@@ -1,23 +1,9 @@
-:root {
-    --main-text-color: #535862;
-  --color-gray-600: #475467;
-  --color-inky: #7f56d9;
-  --title-text-color: #1d2939;
-  --greenDark-color: #027a48;
-  --greenLight-color: #6ce9a6;
-  --blurLight-color: #026aa2;
-  --gray-50: #f9fafb;
-  --gray-100: #e4e7ec;
-  --blue-600: #1570ef;
-  --white: #fff;
-}
-
 
 
 /* SECTION LOGIN STYLE */
 
 .section-login {
-    min-height: calc(100vh - 95px - 16px - 354px);
+    min-height: calc(100vh - 90px - 16px - 354.438px);
     padding: 56px 0 100px;
     max-width: 540px;
     margin: 0 auto;
@@ -104,7 +90,7 @@
 }
 
 .login_notification label {
-    color: #414651;
+    color: var(--gray-400);
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;

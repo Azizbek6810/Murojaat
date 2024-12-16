@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client cabinet with Fiskal check</title>
+
+    <!-- BOOTSTRAP LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- ICOMOON LINK -->
+    <link rel="stylesheet" href="./assets/icomoon/style.css" />
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+
+    <!-- STYLE CSS LINK -->
+    <link rel="stylesheet" href="./assets/css/global.css" />
+</head>
+
+<body>
+    <section class="section-cabinet">
+        <div class="container-fluid">
+            <div class="row flex-nowrap">
+                <div class="left_sidebar col-auto col-md-3 col-xl-2 px-sm-2 bg-body shadow">
+                    <div class="fixed">
+                        <div
+                            class="d-flex flex-column align-items-center align-items-sm-start min-vh-100 px-3 gap-3 bg-body">
+                            <div class="header__logo">
+                                <a href="index.html" class="cabinet_logo__link">
+                                    <img src="./assets/images/features/logo.png" alt="logo" />
+                                </a>
+                            </div>
+                            <a href="#" class="cabinet_customer">
+                                <span>Azima Suyunova</span>
+                                <small class="badge bg-warning text-white d-flex"><i
+                                        class="fa-solid fa-person fs-5 me-2"></i>Foydalanuvchi</small>
+                            </a>
+                            <ul class="custom_ul nav nav-pills w-100 flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start gap-2"
+                                id="menu">
+                                <li class="nav-item w-100">
+                                    <a href="#"
+                                        class="px-2 d-flex justify-content-between align-items-center w-100 btn btn-primary">
+                                        <span class="sidebar_link__wrapper">
+                                            <i class="fa-solid fa-newspaper text-white"></i>
+                                            <small class="d-none d-sm-inline fs-6">
+                                                Ariza qoldirish
+                                            </small>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item w-100">
+                                    <a href="#"
+                                        class="nav-link px-2 d-flex justify-content-between align-items-center w-100">
+                                        <span class="sidebar_link__wrapper">
+                                            <i class="icon-file"></i>
+                                            <small class="d-none d-sm-inline"> Arizalarim </small>
+                                        </span>
+                                        <span class="badge">10</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item w-100">
+                                    <a href="#bildirishnoma"
+                                        class="nav-link px-2 d-flex justify-content-between align-items-center w-100"
+                                        data-bs-toggle="collapse">
+                                        <span class="sidebar_link__wrapper">
+                                            <i class="icon-notification-box"></i>
+                                            <small class="d-none d-sm-inline">
+                                                Bildirishnomalar
+                                            </small>
+                                        </span>
+                                        <!-- <span class="badge">5</span> -->
+                                    </a>
+                                    <!-- submenu -->
+                                    <!-- <ul class="collapse nav flex-column " id="bildirishnoma" data-bs-parent="#menu">
+                                        <li class="w-100">
+                                            <a href="#" class="nav-link px-0">
+                                                <span class="d-none d-sm-inline">Item</span>
+                                                1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-link px-0">
+                                                <span class="d-none d-sm-inline">Item</span>
+                                                2
+                                            </a>
+                                        </li>
+                                    </ul> -->
+                                </li>
+                                <li class="nav-item w-100">
+                                    <a href="#"
+                                        class="nav-link px-2 d-flex justify-content-between align-items-center w-100">
+                                        <span class="sidebar_link__wrapper">
+                                            <i class="icon-bar-chart"></i>
+                                            <small class="d-none d-sm-inline"> Menu </small>
+                                        </span>
+                                        <span class="badge">22</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item w-100">
+                                    <a href="#malumotlar"
+                                        class="nav-link px-2 d-flex justify-content-between align-items-center w-100"
+                                        data-bs-toggle="collapse">
+                                        <span class="sidebar_link__wrapper">
+                                            <i class="icon-investigation"></i>
+                                            <small class="d-none d-sm-inline"> Ma'lumotlar </small>
+                                        </span>
+                                    </a>
+                                    <ul class="collapse nav flex-column" id="malumotlar" data-bs-parent="#menu">
+                                        <li class="w-100">
+                                            <a href="#" class="nav-link px-0">
+                                                <span class="d-none d-sm-inline">Item</span> 1</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <div class="line"></div>
+                                <li class="nav-item w-100">
+                                    <a href="./index.html"
+                                        class="px-2 d-flex justify-content-between align-items-center w-100 btn btn-danger">
+                                        <span class="sidebar_link__wrapper">
+                                            <i class="fa-solid fa-right-from-bracket text-white"></i>
+                                            <small class="d-none d-sm-inline fs-6 text-white fw-normal">
+                                                Kabinetdan chiqish
+                                            </small>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <hr />
+                            <div class="text-center pb-4">App version: <b>1.0.0</b> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_sidebar col">
+                    <div class="right_sidebar__content">
+                        <div class="right_sidebar__header">
+                            <div class="right_sidebar__header_top">
+                                <div class="breadcrumbs">
+                                    <i class="icon-home-line"></i>
+                                    <i class="icon-chevron-down1" style="transform: rotate(270deg)"></i>
+                                    <a>Murojaatlarim</a>
+                                    <i class="icon-chevron-down1" style="transform: rotate(270deg)"></i>
+                                    <a>Yangi murojaat yuborish</a>
+                                </div>
+                                <div class="notifications_btn">
+                                    Bildirishnomalar
+                                </div>
+                            </div>
+                            <div class="right_sidebar__header_middle">
+                                <div class="right_sidebar__appeals">
+                                    <h4>Yangi murojaat yuborish</h4>
+                                    <p>Quyidagi bo'limlarni to'liq to'ldirish orqali murojatingizni yuboring</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right_sidebar__body">
+                            <div class="right_sidebar__appeals mb-4">
+                                <h4>Qidiruv usuli</h4>
+                                <p>E'tiroz qilmoqchi bo'lgan tashkilotingizni qidirish usulini tanlang</p>
+                            </div>
+                            <div class="form-check mb-5">
+                                <div>
+                                    <input class="form-check-input" type="radio" name="radio-name"
+                                        id="flexRadioDefault1" checked>
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Korxona STIR raqami orqali
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="radio" name="radio-name"
+                                        id="flexRadioDefault2">
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Fiskal chek raqami orqali
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="company_inn">
+                                <div class="d-flex flex-column gap-3">
+                                    <div class="fm_number d-flex align-items-end gap-3">
+                                        <div class="d-flex flex-column">
+                                            <label for="appeal_direction" class="form-label">FM
+                                                raqami<span class="label_required">*</span></label>
+                                            <select class="form-select" aria-label="FM raqami" id="appeal_direction">
+                                                <option selected>
+
+                                                </option>
+                                                <option value="1">CC</option>
+                                                <option value="2">UZ</option>
+                                                <option value="3">NN</option>
+                                            </select>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="_ _ _ _ _ _ _ _ _ _ _"
+                                            required>
+                                    </div>
+                                    <div class="d-flex align-items-end gap-4 justify-content-between">
+                                        <div class="company_inn__input">
+                                            <label for="fiskal-belgi" class="form-label">Fiskal
+                                                belgi<span class="label_required">*</span></label>
+                                            <input type="text" class="form-control" id="fiskal-belgi"
+                                                placeholder="_ _ _ _ _ _ _ _ _ _ _" required>
+                                        </div>
+                                        <button class="btn btn-primary">
+                                            <i class="icon-search"></i>
+                                            <span>Qidirish</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="company_info">
+                                    <div class="company_name">
+                                        <small>Topilgan kompaniya</small>
+                                        <p>UZBEST COMPANY MCHJ</p>
+                                    </div>
+                                    <div class="company_region">
+                                        <small>Hudud</small>
+                                        <p>Farg'ona viloyati</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="right_line">
+                            <form class="right_form">
+                                <div class="company_appeals__wrapper">
+                                    <div class="form-group">
+                                        <label for="route-appeal" class="form-label">Murojaat
+                                            yo'nalishi<span class="label_required">*</span></label>
+                                        <select class="form-select" aria-label="Murojaat yo'nalishini tanlang"
+                                            id="route-appeal">
+                                            <option selected>Murojaat yo'nalishini tanlang</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="category-appeal" class="form-label">Murojaat
+                                            kategoriyasi<span class="label_required">*</span></label>
+                                        <select class="form-select" aria-label="Murojaat kategoriyasini tanlang "
+                                            id="category-appeal">
+                                            <option selected>Murojaat kategoriyasini tanlang</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="type-appeal" class="form-label">Murojaat turi<span class="label_required">*</span></label>
+                                        <select class="form-select" aria-label="Murojaat turini tanlang"
+                                            id="type-appeal">
+                                            <option selected>Murojaat turini tanlang</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="alert d-flex gap-2 align-items-center" role="alert">
+                                    <i class="icon-alert-circle fs-4"></i>
+                                    <div class="d-flex flex-column">
+                                        <h5>Diqqat!</h5>
+                                        <p>Ushbu tashkilotga ariza yuborish uchun chek faylini yuklashingiz majburiy</p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="appeal-description">Murojaat matni</label>
+                                    <textarea rows="10" class="form-control" id="appeal-description"
+                                        placeholder="Murojaatingiz mazmuni haqida qisqacha yozib qoldiring"></textarea>
+                                </div>
+                                <div class="upload_btn__wrapper">
+                                    <div class="form-group">
+                                        <label for="formFile" class="form-label">Fiskal chek rasmini yuklang
+                                            <span class="label_required">*</span></label>
+                                        <div class="input_container">
+                                            <input class="form-control" type="file" id="formFile">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center gap-4">
+                                    <button class="btn btn-outline-danger px-5 cancel_btn">Bekor qilish</button>
+                                    <a class="btn btn-primary px-5" href="./cabinet-confirm-appeal.html">Keyingi</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOTSTRAP BUNDLE.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+        defer></script>
+
+    <!-- HIGHCHART.JS -->
+    <script src="https://code.highcharts.com/highcharts.js" defer></script>
+    <script src="https://code.highcharts.com/modules/exporting.js" defer></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js" defer></script>
+
+    <!-- HIGHMAPS.JS -->
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+
+    <!-- MAIN.JS -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
