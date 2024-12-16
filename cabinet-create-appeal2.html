@@ -18,11 +18,14 @@
 
     <!-- STYLE CSS LINK -->
     <link rel="stylesheet" href="./assets/css/global.css" />
+
+    <!-- CABINET CREATE APPEAL CSS LINK -->
+    <link rel="stylesheet" href="./assets/css/cabinet-create-appeal.css" />
 </head>
 
 <body>
-    <section class="section-cabinet">
-        <div class="container-fluid">
+    <main>
+        <div class="section-cabinet container-fluid">
             <div class="row flex-nowrap">
                 <div class="left_sidebar col-auto col-md-3 col-xl-2 px-sm-2 bg-body shadow">
                     <div class="fixed">
@@ -135,7 +138,7 @@
                 </div>
                 <div class="right_sidebar col">
                     <div class="right_sidebar__content">
-                        <div class="right_sidebar__header">
+                        <header class="right_sidebar__header">
                             <div class="right_sidebar__header_top">
                                 <div class="breadcrumbs">
                                     <i class="icon-home-line"></i>
@@ -154,7 +157,7 @@
                                     <p>Quyidagi bo'limlarni to'liq to'ldirish orqali murojatingizni yuboring</p>
                                 </div>
                             </div>
-                        </div>
+                        </header>
                         <div class="right_sidebar__body">
                             <div class="right_sidebar__appeals mb-4">
                                 <h4>Qidiruv usuli</h4>
@@ -244,7 +247,8 @@
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <label for="type-appeal" class="form-label">Murojaat turi<span class="label_required">*</span></label>
+                                        <label for="type-appeal" class="form-label">Murojaat turi<span
+                                                class="label_required">*</span></label>
                                         <select class="form-select" aria-label="Murojaat turini tanlang"
                                             id="type-appeal">
                                             <option selected>Murojaat turini tanlang</option>
@@ -285,7 +289,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </main>
 
     <!-- BOOTSTRAP BUNDLE.JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

@@ -29,12 +29,3 @@
     text-align: center;
 }
 
-.right_sidebar__header_middle{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.right_sidebar__header_middle .input-group{
-    width: fit-content;
-}

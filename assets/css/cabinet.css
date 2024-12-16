@@ -1,23 +1,5 @@
 
-/* RIGHT SIDEBAR STYLE */
 
-.right_sidebar {
-    padding: 32px;
-}
-
-.right_sidebar__header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 32px;
-    margin-bottom: 32px;
-}
-
-.right_sidebar__header_top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .right_sidebar__body_middle {
     display: flex;
