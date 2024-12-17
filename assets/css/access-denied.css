@@ -21,8 +21,6 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 32px;
-    letter-spacing: 0%;
-    text-align: center;
 }
 
 .access_denied p {
@@ -30,6 +28,4 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0%;
-    text-align: center;
 }
