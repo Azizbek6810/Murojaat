@@ -73,7 +73,7 @@
                     <img src="./assets/images/features/user.png" alt="profile image">
                     <div class="profile_person">
                         <h3>John Doe</h3>
-                        <p>Login: 97432432 (foydalanuvchi)</p>
+                        <p>ID: 97432432 (foydalanuvchi)</p>
                     </div>
                 </div>
                 <button class="btn btn-primary edit_profile__btn">
@@ -81,438 +81,429 @@
                     Edit profile
                 </button>
             </div>
-
             <!-- profile body -->
-            <ul class="nav nav-pills mb-3 gap-2" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                        aria-selected="true">Info</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                        aria-selected="false">Sessions</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
-                        aria-selected="false">Logs</button>
-                </li>
-            </ul>
-            <div class="tab-content" id="pills-tabContent">
-                <!-- tab-1 -->
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
-                    tabindex="0">
-                    <div class="profile_information">
+            <div class="profile_body">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                            aria-selected="true">Info</button>
+                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                            type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Sessions</button>
+                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                            type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Logs</button>
+                    </div>
+                </nav>
 
-                        <!-- profile-1 -->
-                        <div class="profile_box">
-                            <small>F.I.SH:</small>
-                            <p>Fazliddinov Tohirbek Samandarovich</p>
-                        </div>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                        tabindex="0">
+                        <div class="profile_information">
 
-                        <!-- profile-2 -->
-                        <div class="profile_box">
-                            <small>Passport seriya raqami:</small>
-                            <p>AA 1971990</p>
-                        </div>
+                            <!-- profile-1 -->
+                            <div class="profile_box">
+                                <small>F.I.SH:</small>
+                                <p>Fazliddinov Tohirbek Samandarovich</p>
+                            </div>
 
-                        <!-- profile-3 -->
-                        <div class="profile_box">
-                            <small>Telefon raqami:</small>
-                            <p>+998 94 4986565</p>
-                        </div>
+                            <!-- profile-2 -->
+                            <div class="profile_box">
+                                <small>Passport seriya raqami:</small>
+                                <p>AA 1971990</p>
+                            </div>
 
-                        <!-- profile-4 -->
-                        <div class="profile_box">
-                            <small>Hudud:</small>
-                            <p>Farg'ona viloyati, Farg'ona shahar</p>
+                            <!-- profile-3 -->
+                            <div class="profile_box">
+                                <small>Telefon raqami:</small>
+                                <p>+998 94 4986565</p>
+                            </div>
+
+                            <!-- profile-4 -->
+                            <div class="profile_box">
+                                <small>Hudud:</small>
+                                <p>Farg'ona viloyati, Farg'ona shahar</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                        tabindex="0">
+                        <div class="table_wrapper">
+                            <table class="table table-striped">
+                                <tr>
+                                    <th>№</th>
+                                    <th>Tashkilot nomi</th>
+                                    <th>Kelib tushgan murojaatlar</th>
+                                    <th>Hal qilingan murojaatlar</th>
+                                    <th>Foizda</th>
+                                    <th>O'rtacha ko'rib chiqish muddati</th>
+                                </tr>
 
-                <!-- tab-2 -->
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
-                    tabindex="0">
-                    <div class="table_wrapper">
-                        <table class="table table-striped">
-                            <tr>
-                                <th>№</th>
-                                <th>Tashkilot nomi</th>
-                                <th>Kelib tushgan murojaatlar</th>
-                                <th>Hal qilingan murojaatlar</th>
-                                <th>Foizda</th>
-                                <th>O'rtacha ko'rib chiqish muddati</th>
-                            </tr>
+                                <!-- tr-1 -->
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <a href="./company-appeals.html"> Ta'lim vazirligi </a>
+                                    </td>
+                                    <td><span>257</span></td>
+                                    <td><span class="resolved__appeals_number">257</span></td>
+                                    <td>
+                                        <span class="resolved__appeals_percent">
+                                            <i class="icon-arrow-up"></i>
+                                            82%
+                                        </span>
+                                    </td>
+                                    <td><span>15 ish kuni</span></td>
+                                </tr>
 
-                            <!-- tr-1 -->
-                            <tr>
-                                <td>1</td>
-                                <td>
-                                    <a href="./company-appeals.html"> Ta'lim vazirligi </a>
-                                </td>
-                                <td><span>257</span></td>
-                                <td><span class="resolved__appeals_number">257</span></td>
-                                <td>
-                                    <span class="resolved__appeals_percent">
-                                        <i class="icon-arrow-up"></i>
-                                        82%
-                                    </span>
-                                </td>
-                                <td><span>15 ish kuni</span></td>
-                            </tr>
+                                <!-- tr-2 -->
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        <a href="./company-appeals.html">
+                                            Yoshlar ishlari agentligi
+                                        </a>
+                                    </td>
+                                    <td><span>257</span></td>
+                                    <td><span class="resolved__appeals_number">257</span></td>
+                                    <td>
+                                        <span class="resolved__appeals_percent">
+                                            <i class="icon-arrow-up"></i>
+                                            82%
+                                        </span>
+                                    </td>
+                                    <td><span>15 ish kuni</span></td>
+                                </tr>
 
-                            <!-- tr-2 -->
-                            <tr>
-                                <td>2</td>
-                                <td>
-                                    <a href="./company-appeals.html">
-                                        Yoshlar ishlari agentligi
-                                    </a>
-                                </td>
-                                <td><span>257</span></td>
-                                <td><span class="resolved__appeals_number">257</span></td>
-                                <td>
-                                    <span class="resolved__appeals_percent">
-                                        <i class="icon-arrow-up"></i>
-                                        82%
-                                    </span>
-                                </td>
-                                <td><span>15 ish kuni</span></td>
-                            </tr>
+                                <!-- tr-3 -->
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        <a href="./company-appeals.html"> Bandlik </a>
+                                    </td>
+                                    <td><span>257</span></td>
+                                    <td><span class="resolved__appeals_number">257</span></td>
+                                    <td>
+                                        <span class="resolved__appeals_percent">
+                                            <i class="icon-arrow-up"></i>
+                                            82%
+                                        </span>
+                                    </td>
+                                    <td><span>15 ish kuni</span></td>
+                                </tr>
 
-                            <!-- tr-3 -->
-                            <tr>
-                                <td>3</td>
-                                <td>
-                                    <a href="./company-appeals.html"> Bandlik </a>
-                                </td>
-                                <td><span>257</span></td>
-                                <td><span class="resolved__appeals_number">257</span></td>
-                                <td>
-                                    <span class="resolved__appeals_percent">
-                                        <i class="icon-arrow-up"></i>
-                                        82%
-                                    </span>
-                                </td>
-                                <td><span>15 ish kuni</span></td>
-                            </tr>
+                                <!-- tr-4 -->
+                                <tr>
+                                    <td>4</td>
+                                    <td><a href="./company-appeals.html"> Pochta MTM </a></td>
+                                    <td><span>257</span></td>
+                                    <td><span class="resolved__appeals_number">257</span></td>
+                                    <td>
+                                        <span class="resolved__appeals_percent">
+                                            <i class="icon-arrow-up"></i>
+                                            82%
+                                        </span>
+                                    </td>
+                                    <td><span>15 ish kuni</span></td>
+                                </tr>
 
-                            <!-- tr-4 -->
-                            <tr>
-                                <td>4</td>
-                                <td><a href="./company-appeals.html"> Pochta MTM </a></td>
-                                <td><span>257</span></td>
-                                <td><span class="resolved__appeals_number">257</span></td>
-                                <td>
-                                    <span class="resolved__appeals_percent">
-                                        <i class="icon-arrow-up"></i>
-                                        82%
-                                    </span>
-                                </td>
-                                <td><span>15 ish kuni</span></td>
-                            </tr>
+                                <!-- tr-5 -->
+                                <tr>
+                                    <td>5</td>
+                                    <td>
+                                        <a href="./company-appeals.html">
+                                            Bank va moliya boshqarmasi
+                                        </a>
+                                    </td>
+                                    <td><span>257</span></td>
+                                    <td><span class="resolved__appeals_number">257</span></td>
+                                    <td>
+                                        <span class="resolved__appeals_percent">
+                                            <i class="icon-arrow-up"></i>
+                                            82%
+                                        </span>
+                                    </td>
+                                    <td><span>15 ish kuni</span></td>
+                                </tr>
 
-                            <!-- tr-5 -->
-                            <tr>
-                                <td>5</td>
-                                <td>
-                                    <a href="./company-appeals.html">
-                                        Bank va moliya boshqarmasi
-                                    </a>
-                                </td>
-                                <td><span>257</span></td>
-                                <td><span class="resolved__appeals_number">257</span></td>
-                                <td>
-                                    <span class="resolved__appeals_percent">
-                                        <i class="icon-arrow-up"></i>
-                                        82%
-                                    </span>
-                                </td>
-                                <td><span>15 ish kuni</span></td>
-                            </tr>
+                                <!-- tr-6 -->
+                                <tr>
+                                    <td>6</td>
+                                    <td>
+                                        <a href="./company-appeals.html">
+                                            Yoshlar ishlari agentligi
+                                        </a>
+                                    </td>
+                                    <td><span>257</span></td>
+                                    <td><span class="resolved__appeals_number">257</span></td>
+                                    <td>
+                                        <span class="resolved__appeals_percent">
+                                            <i class="icon-arrow-up"></i>
+                                            82%
+                                        </span>
+                                    </td>
+                                    <td><span>15 ish kuni</span></td>
+                                </tr>
 
-                            <!-- tr-6 -->
-                            <tr>
-                                <td>6</td>
-                                <td>
-                                    <a href="./company-appeals.html">
-                                        Yoshlar ishlari agentligi
-                                    </a>
-                                </td>
-                                <td><span>257</span></td>
-                                <td><span class="resolved__appeals_number">257</span></td>
-                                <td>
-                                    <span class="resolved__appeals_percent">
-                                        <i class="icon-arrow-up"></i>
-                                        82%
-                                    </span>
-                                </td>
-                                <td><span>15 ish kuni</span></td>
-                            </tr>
+                                <!-- tr-7 -->
+                                <tr>
+                                    <td>7</td>
+                                    <td>
+                                        <a href="./company-appeals.html"> Pochta </a>
+                                    </td>
+                                    <td><span>257</span></td>
+                                    <td><span class="resolved__appeals_number">257</span></td>
+                                    <td>
+                                        <span class="resolved__appeals_percent">
+                                            <i class="icon-arrow-up"></i>
+                                            82%
+                                        </span>
+                                    </td>
+                                    <td><span>15 ish kuni</span></td>
+                                </tr>
 
-                            <!-- tr-7 -->
-                            <tr>
-                                <td>7</td>
-                                <td>
-                                    <a href="./company-appeals.html"> Pochta </a>
-                                </td>
-                                <td><span>257</span></td>
-                                <td><span class="resolved__appeals_number">257</span></td>
-                                <td>
-                                    <span class="resolved__appeals_percent">
-                                        <i class="icon-arrow-up"></i>
-                                        82%
-                                    </span>
-                                </td>
-                                <td><span>15 ish kuni</span></td>
-                            </tr>
+                                <!-- tr-8 -->
+                                <tr>
+                                    <td>8</td>
+                                    <td>
+                                        <a href="./company-appeals.html"> Maishiy texnika </a>
+                                    </td>
+                                    <td><span>257</span></td>
+                                    <td><span class="resolved__appeals_number">257</span></td>
+                                    <td>
+                                        <span class="resolved__appeals_percent">
+                                            <i class="icon-arrow-up"></i>
+                                            82%
+                                        </span>
+                                    </td>
+                                    <td><span>15 ish kuni</span></td>
+                                </tr>
 
-                            <!-- tr-8 -->
-                            <tr>
-                                <td>8</td>
-                                <td>
-                                    <a href="./company-appeals.html"> Maishiy texnika </a>
-                                </td>
-                                <td><span>257</span></td>
-                                <td><span class="resolved__appeals_number">257</span></td>
-                                <td>
-                                    <span class="resolved__appeals_percent">
-                                        <i class="icon-arrow-up"></i>
-                                        82%
-                                    </span>
-                                </td>
-                                <td><span>15 ish kuni</span></td>
-                            </tr>
+                                <!-- tr-9 -->
+                                <tr>
+                                    <td>9</td>
+                                    <td>
+                                        <a href="./company-appeals.html"> Savdo sohasi </a>
+                                    </td>
+                                    <td><span>257</span></td>
+                                    <td><span class="resolved__appeals_number">257</span></td>
+                                    <td>
+                                        <span class="resolved__appeals_percent">
+                                            <i class="icon-arrow-up"></i>
+                                            82%
+                                        </span>
+                                    </td>
+                                    <td><span>15 ish kuni</span></td>
+                                </tr>
 
-                            <!-- tr-9 -->
-                            <tr>
-                                <td>9</td>
-                                <td>
-                                    <a href="./company-appeals.html"> Savdo sohasi </a>
-                                </td>
-                                <td><span>257</span></td>
-                                <td><span class="resolved__appeals_number">257</span></td>
-                                <td>
-                                    <span class="resolved__appeals_percent">
-                                        <i class="icon-arrow-up"></i>
-                                        82%
-                                    </span>
-                                </td>
-                                <td><span>15 ish kuni</span></td>
-                            </tr>
+                                <!-- tr-10 -->
+                                <tr>
+                                    <td>10</td>
+                                    <td>
+                                        <a href="./company-appeals.html"> Internet </a>
+                                    </td>
+                                    <td><span>257</span></td>
+                                    <td><span class="resolved__appeals_number">257</span></td>
+                                    <td>
+                                        <span class="resolved__appeals_percent">
+                                            <i class="icon-arrow-up"></i>
+                                            82%
+                                        </span>
+                                    </td>
+                                    <td><span>15 ish kuni</span></td>
+                                </tr>
 
-                            <!-- tr-10 -->
-                            <tr>
-                                <td>10</td>
-                                <td>
-                                    <a href="./company-appeals.html"> Internet </a>
-                                </td>
-                                <td><span>257</span></td>
-                                <td><span class="resolved__appeals_number">257</span></td>
-                                <td>
-                                    <span class="resolved__appeals_percent">
-                                        <i class="icon-arrow-up"></i>
-                                        82%
-                                    </span>
-                                </td>
-                                <td><span>15 ish kuni</span></td>
-                            </tr>
-
-                        </table>
+                            </table>
+                        </div>
                     </div>
-                </div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"
+                        tabindex="0">
+                        <div class="table_wrapper">
+                            <table class="table table-striped">
+                                <tr>
+                                    <th>№</th>
+                                    <th>Tashkilot nomi</th>
+                                    <th>Kelib tushgan murojaatlar</th>
+                                    <th>Hal qilingan murojaatlar</th>
+                                    <th>Foizda</th>
+                                    <th>O'rtacha ko'rib chiqish muddati</th>
+                                </tr>
 
-                <!-- tab-3 -->
-                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
-                    tabindex="0">
-                    <div class="table_wrapper">
-                        <table class="table table-striped">
-                            <tr>
-                                <th>№</th>
-                                <th>Tashkilot nomi</th>
-                                <th>Kelib tushgan murojaatlar</th>
-                                <th>Hal qilingan murojaatlar</th>
-                                <th>Foizda</th>
-                                <th>O'rtacha ko'rib chiqish muddati</th>
-                            </tr>
+                                <!-- tr-1 -->
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <a href="./company-appeals.html"> Ta'lim vazirligi </a>
+                                    </td>
+                                    <td><span>257</span></td>
+                                    <td><span class="resolved__appeals_number">257</span></td>
+                                    <td>
+                                        <span class="resolved__appeals_percent">
+                                            <i class="icon-arrow-up"></i>
+                                            82%
+                                        </span>
+                                    </td>
+                                    <td><span>15 ish kuni</span></td>
+                                </tr>
 
-                            <!-- tr-1 -->
-                            <tr>
-                                <td>1</td>
-                                <td>
-                                    <a href="./company-appeals.html"> Ta'lim vazirligi </a>
-                                </td>
-                                <td><span>257</span></td>
-                                <td><span class="resolved__appeals_number">257</span></td>
-                                <td>
-                                    <span class="resolved__appeals_percent">
-                                        <i class="icon-arrow-up"></i>
-                                        82%
-                                    </span>
-                                </td>
-                                <td><span>15 ish kuni</span></td>
-                            </tr>
+                                <!-- tr-2 -->
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        <a href="./company-appeals.html">
+                                            Yoshlar ishlari agentligi
+                                        </a>
+                                    </td>
+                                    <td><span>257</span></td>
+                                    <td><span class="resolved__appeals_number">257</span></td>
+                                    <td>
+                                        <span class="resolved__appeals_percent">
+                                            <i class="icon-arrow-up"></i>
+                                            82%
+                                        </span>
+                                    </td>
+                                    <td><span>15 ish kuni</span></td>
+                                </tr>
 
-                            <!-- tr-2 -->
-                            <tr>
-                                <td>2</td>
-                                <td>
-                                    <a href="./company-appeals.html">
-                                        Yoshlar ishlari agentligi
-                                    </a>
-                                </td>
-                                <td><span>257</span></td>
-                                <td><span class="resolved__appeals_number">257</span></td>
-                                <td>
-                                    <span class="resolved__appeals_percent">
-                                        <i class="icon-arrow-up"></i>
-                                        82%
-                                    </span>
-                                </td>
-                                <td><span>15 ish kuni</span></td>
-                            </tr>
+                                <!-- tr-3 -->
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        <a href="./company-appeals.html"> Bandlik </a>
+                                    </td>
+                                    <td><span>257</span></td>
+                                    <td><span class="resolved__appeals_number">257</span></td>
+                                    <td>
+                                        <span class="resolved__appeals_percent">
+                                            <i class="icon-arrow-up"></i>
+                                            82%
+                                        </span>
+                                    </td>
+                                    <td><span>15 ish kuni</span></td>
+                                </tr>
 
-                            <!-- tr-3 -->
-                            <tr>
-                                <td>3</td>
-                                <td>
-                                    <a href="./company-appeals.html"> Bandlik </a>
-                                </td>
-                                <td><span>257</span></td>
-                                <td><span class="resolved__appeals_number">257</span></td>
-                                <td>
-                                    <span class="resolved__appeals_percent">
-                                        <i class="icon-arrow-up"></i>
-                                        82%
-                                    </span>
-                                </td>
-                                <td><span>15 ish kuni</span></td>
-                            </tr>
+                                <!-- tr-4 -->
+                                <tr>
+                                    <td>4</td>
+                                    <td><a href="./company-appeals.html"> Pochta MTM </a></td>
+                                    <td><span>257</span></td>
+                                    <td><span class="resolved__appeals_number">257</span></td>
+                                    <td>
+                                        <span class="resolved__appeals_percent">
+                                            <i class="icon-arrow-up"></i>
+                                            82%
+                                        </span>
+                                    </td>
+                                    <td><span>15 ish kuni</span></td>
+                                </tr>
 
-                            <!-- tr-4 -->
-                            <tr>
-                                <td>4</td>
-                                <td><a href="./company-appeals.html"> Pochta MTM </a></td>
-                                <td><span>257</span></td>
-                                <td><span class="resolved__appeals_number">257</span></td>
-                                <td>
-                                    <span class="resolved__appeals_percent">
-                                        <i class="icon-arrow-up"></i>
-                                        82%
-                                    </span>
-                                </td>
-                                <td><span>15 ish kuni</span></td>
-                            </tr>
+                                <!-- tr-5 -->
+                                <tr>
+                                    <td>5</td>
+                                    <td>
+                                        <a href="./company-appeals.html">
+                                            Bank va moliya boshqarmasi
+                                        </a>
+                                    </td>
+                                    <td><span>257</span></td>
+                                    <td><span class="resolved__appeals_number">257</span></td>
+                                    <td>
+                                        <span class="resolved__appeals_percent">
+                                            <i class="icon-arrow-up"></i>
+                                            82%
+                                        </span>
+                                    </td>
+                                    <td><span>15 ish kuni</span></td>
+                                </tr>
 
-                            <!-- tr-5 -->
-                            <tr>
-                                <td>5</td>
-                                <td>
-                                    <a href="./company-appeals.html">
-                                        Bank va moliya boshqarmasi
-                                    </a>
-                                </td>
-                                <td><span>257</span></td>
-                                <td><span class="resolved__appeals_number">257</span></td>
-                                <td>
-                                    <span class="resolved__appeals_percent">
-                                        <i class="icon-arrow-up"></i>
-                                        82%
-                                    </span>
-                                </td>
-                                <td><span>15 ish kuni</span></td>
-                            </tr>
+                                <!-- tr-6 -->
+                                <tr>
+                                    <td>6</td>
+                                    <td>
+                                        <a href="./company-appeals.html">
+                                            Yoshlar ishlari agentligi
+                                        </a>
+                                    </td>
+                                    <td><span>257</span></td>
+                                    <td><span class="resolved__appeals_number">257</span></td>
+                                    <td>
+                                        <span class="resolved__appeals_percent">
+                                            <i class="icon-arrow-up"></i>
+                                            82%
+                                        </span>
+                                    </td>
+                                    <td><span>15 ish kuni</span></td>
+                                </tr>
 
-                            <!-- tr-6 -->
-                            <tr>
-                                <td>6</td>
-                                <td>
-                                    <a href="./company-appeals.html">
-                                        Yoshlar ishlari agentligi
-                                    </a>
-                                </td>
-                                <td><span>257</span></td>
-                                <td><span class="resolved__appeals_number">257</span></td>
-                                <td>
-                                    <span class="resolved__appeals_percent">
-                                        <i class="icon-arrow-up"></i>
-                                        82%
-                                    </span>
-                                </td>
-                                <td><span>15 ish kuni</span></td>
-                            </tr>
+                                <!-- tr-7 -->
+                                <tr>
+                                    <td>7</td>
+                                    <td>
+                                        <a href="./company-appeals.html"> Pochta </a>
+                                    </td>
+                                    <td><span>257</span></td>
+                                    <td><span class="resolved__appeals_number">257</span></td>
+                                    <td>
+                                        <span class="resolved__appeals_percent">
+                                            <i class="icon-arrow-up"></i>
+                                            82%
+                                        </span>
+                                    </td>
+                                    <td><span>15 ish kuni</span></td>
+                                </tr>
 
-                            <!-- tr-7 -->
-                            <tr>
-                                <td>7</td>
-                                <td>
-                                    <a href="./company-appeals.html"> Pochta </a>
-                                </td>
-                                <td><span>257</span></td>
-                                <td><span class="resolved__appeals_number">257</span></td>
-                                <td>
-                                    <span class="resolved__appeals_percent">
-                                        <i class="icon-arrow-up"></i>
-                                        82%
-                                    </span>
-                                </td>
-                                <td><span>15 ish kuni</span></td>
-                            </tr>
+                                <!-- tr-8 -->
+                                <tr>
+                                    <td>8</td>
+                                    <td>
+                                        <a href="./company-appeals.html"> Maishiy texnika </a>
+                                    </td>
+                                    <td><span>257</span></td>
+                                    <td><span class="resolved__appeals_number">257</span></td>
+                                    <td>
+                                        <span class="resolved__appeals_percent">
+                                            <i class="icon-arrow-up"></i>
+                                            82%
+                                        </span>
+                                    </td>
+                                    <td><span>15 ish kuni</span></td>
+                                </tr>
 
-                            <!-- tr-8 -->
-                            <tr>
-                                <td>8</td>
-                                <td>
-                                    <a href="./company-appeals.html"> Maishiy texnika </a>
-                                </td>
-                                <td><span>257</span></td>
-                                <td><span class="resolved__appeals_number">257</span></td>
-                                <td>
-                                    <span class="resolved__appeals_percent">
-                                        <i class="icon-arrow-up"></i>
-                                        82%
-                                    </span>
-                                </td>
-                                <td><span>15 ish kuni</span></td>
-                            </tr>
+                                <!-- tr-9 -->
+                                <tr>
+                                    <td>9</td>
+                                    <td>
+                                        <a href="./company-appeals.html"> Savdo sohasi </a>
+                                    </td>
+                                    <td><span>257</span></td>
+                                    <td><span class="resolved__appeals_number">257</span></td>
+                                    <td>
+                                        <span class="resolved__appeals_percent">
+                                            <i class="icon-arrow-up"></i>
+                                            82%
+                                        </span>
+                                    </td>
+                                    <td><span>15 ish kuni</span></td>
+                                </tr>
 
-                            <!-- tr-9 -->
-                            <tr>
-                                <td>9</td>
-                                <td>
-                                    <a href="./company-appeals.html"> Savdo sohasi </a>
-                                </td>
-                                <td><span>257</span></td>
-                                <td><span class="resolved__appeals_number">257</span></td>
-                                <td>
-                                    <span class="resolved__appeals_percent">
-                                        <i class="icon-arrow-up"></i>
-                                        82%
-                                    </span>
-                                </td>
-                                <td><span>15 ish kuni</span></td>
-                            </tr>
+                                <!-- tr-10 -->
+                                <tr>
+                                    <td>10</td>
+                                    <td>
+                                        <a href="./company-appeals.html"> Internet </a>
+                                    </td>
+                                    <td><span>257</span></td>
+                                    <td><span class="resolved__appeals_number">257</span></td>
+                                    <td>
+                                        <span class="resolved__appeals_percent">
+                                            <i class="icon-arrow-up"></i>
+                                            82%
+                                        </span>
+                                    </td>
+                                    <td><span>15 ish kuni</span></td>
+                                </tr>
 
-                            <!-- tr-10 -->
-                            <tr>
-                                <td>10</td>
-                                <td>
-                                    <a href="./company-appeals.html"> Internet </a>
-                                </td>
-                                <td><span>257</span></td>
-                                <td><span class="resolved__appeals_number">257</span></td>
-                                <td>
-                                    <span class="resolved__appeals_percent">
-                                        <i class="icon-arrow-up"></i>
-                                        82%
-                                    </span>
-                                </td>
-                                <td><span>15 ish kuni</span></td>
-                            </tr>
-
-                        </table>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,35 +1,14 @@
 .section-profile {
     min-height: calc(100vh - 90.77px - 16px - 354.438px);
-    margin: 32px 0;
-}
-
-.section-profile .nav-pills .nav-link {
-    background-color: transparent;
-    border: 2px solid var(--gray-100);
-    background: var(--white-100);
-    border-radius: 6px;
-    color: var(--gray-360);
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 20px;
-}
-
-.section-profile .nav-pills .nav-link.active {
-    background-color: transparent;
-    border: 2px solid var(--blurLight-color);
-    color: var(--color-gray-600);
-    background: var(--white);
+    margin: 32px 0 64px 0;
 }
 
 .profile_header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 32px;
-    border: 1px solid var(--gray-100);
+    margin-bottom: 12px;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px 5px #0a0d120f;
 }
 
 .profile_info {
@@ -53,14 +32,18 @@
     line-height: 24px;
 }
 
-.profile_information{
+.profile_information {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
     flex-direction: column;
     padding-top: 16px;
-    border-top: 1px solid var(--gray-100);
-    
+}
+
+.table_wrapper {
+   margin-top: 16px;
+    height: 50vh;
+    overflow: auto;
 }
 
 .profile_box small {
