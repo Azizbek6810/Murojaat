@@ -1,6 +1,3 @@
-
-
-
 .right_sidebar__body_middle {
     display: flex;
     align-items: center;
@@ -46,7 +43,7 @@
     border-radius: 8px;
     cursor: pointer;
     transition: box-shadow 0.3s linear;
-   width: max-content;
+    width: max-content;
 }
 
 .right_sidebar__filter_box:hover {
@@ -92,7 +89,7 @@
     background: var(--white);
 }
 
-.appeals_list__overflow{
+.appeals_list__overflow {
     height: 80vh;
     overflow: auto;
 }

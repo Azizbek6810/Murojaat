@@ -1,0 +1,26 @@
+.section-profile {
+    min-height: calc(100vh - 90.77px - 16px - 354.438px);
+    padding: 10px 0;
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.section-profile .nav-pills .nav-link {
+    background-color: transparent;
+    border: 2px solid var(--gray-100);
+    background: var(--white-100);
+    border-radius: 6px;
+    color: var(--gray-360);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.section-profile .nav-pills .nav-link.active {
+    background-color: transparent;
+    border: 2px solid var(--blurLight-color);
+    color: var(--color-gray-600);
+    background: var(--white);
+}
+
+.profile_person{}

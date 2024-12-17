@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Access denied</title>
+    <title>Profile</title>
 
     <!-- BOOTSTRAP LINK -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -18,9 +18,9 @@
 
     <!-- STYLE CSS LINK -->
     <link rel="stylesheet" href="./assets/css/global.css" />
-    
+
     <!-- NOT FOUND CSS LINK -->
-    <link rel="stylesheet" href="./assets/css/access-denied.css" />
+    <link rel="stylesheet" href="./assets/css/profile.css" />
 </head>
 
 <body>
@@ -65,18 +65,47 @@
         </div>
     </header>
 
-    <section class="section-access-denied">
+    <section class="section-profile">
         <div class="container">
-            <div class="access_denied">
-                <img src="./assets/images/403.png" alt="access denied">
-                <!-- <h3>Access denied</h3> -->
-                <p>
-                    Sizda hozircha hech qanday murojaatlar mavjud emas, “Murojaat qilish” tugmasini
-                    bosish orqali yangi murojaat qilisginfiz mumkin.
-                </p>
-                <a class="btn btn-primary px-4" href="index.html">
-                    <span>Back</span>
-                </a>
+            <!-- profile header -->
+            <div class="profile_header">
+                <div class="profile_info">
+                    <img src="./assets/images/features/user.png" alt="profile image">
+                    <div class="profile_person">
+                        <h3>John Doe</h3>
+                        <h4>Login: 97432432 (foydalanuvchi)</h4>
+                    </div>
+                </div>
+                <button class="btn btn-primary">
+                    <i class="fa-solid fa-user-pen"></i>
+                    Edit profile</button>
+            </div>
+
+            <!-- profile body -->
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true">Info</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false">Sessions</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">Logs</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                    tabindex="0">Home</div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                    tabindex="0">Profile</div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                    tabindex="0">Contact</div>
             </div>
         </div>
     </section>
